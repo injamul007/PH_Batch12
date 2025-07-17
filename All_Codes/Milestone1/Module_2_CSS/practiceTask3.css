@@ -1,0 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.hiClass {
+  color: tomato;
+}
+#helloId {
+  color: navy;
+  background-color: blueviolet;
+  /* visibility: hidden; */
+  /* display: none; */
+}
