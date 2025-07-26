@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex</title>
+  <style>
+    .container {
+      display: flex;
+    }
+    .container div{
+      border: 2px solid #e07878;
+      height: 70px;
+      width: 70px;
+      font-size: 2rem;
+    }
+    .box {
+      font-size: 2rem;
+      height: 60px;
+      width: 60px;
+      border: 1px solid black;
+    }
+    .box_container {
+      display: flex;
+      gap: 20px;
+    }
+
+    .user {
+      border: 2px solid rgb(86, 216, 10);
+      height: 70px;
+      width: 70px;
+      font-size: 1.3rem;
+      background-color: rgb(66, 50, 212);
+    }
+    .user_container {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+    .card_container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+  </style>
+  <link rel="stylesheet" href="style/nav.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="blogs.html">Blogs</a></li>
+        <li><a href="center.html">Center</a></li>
+        <li><a href="flex.html">Flex</a></li>
+        <li><a href="form.html">From</a></li>
+        <li><a href="table.html">Table</a></li>
+        <li><a href="auto.html">Auto Margin</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+    <div>1</div>
+    <div>2</div>
+    <div>3</div>
+    <div>4</div>
+    <div>5</div>
+    <div>6</div>
+  </div>
+  <div class="box_container">
+    <!-- .box{$}*6  this will give number in serially -->
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+  </div>
+  <div class="user_container">
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+  </div>
+  <div class="card_container">
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+    <div class="user">user-1</div>
+    <div class="user">user-2</div>
+    <div class="user">user-3</div>
+  </div>
+  
+</body>
+</html>
