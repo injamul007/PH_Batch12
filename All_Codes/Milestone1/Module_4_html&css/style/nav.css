@@ -1,0 +1,16 @@
+nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+nav li {
+  list-style: none;
+  padding: 6px 10px;
+}
+nav li a {
+  text-decoration: none;
+  color: black;
+}
+
+nav li:hover {
+  background-color: lightblue
+}
