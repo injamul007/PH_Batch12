@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positions in css</title>
+</head>
+<style>
+  .box {
+    border: 2px dotted palegreen;
+    width: 200px;
+  }
+  /* .ring {
+    position: relative;
+    left: 40px;
+    top: 50px;
+  } */
+   .swim_container {
+    position: relative;
+   }
+   .ring {
+    position: absolute;
+    top: 40px;
+    left: 50px;
+   }
+</style>
+<body>
+  <h1>Css Positions</h1>
+  <ol>
+    <!-- flow related -->
+    <li>Normal/Static Position</li>
+    <li>Relative position</li>
+    <li>Absolute Position</li>
+    <!-- Scroll related -->
+    <li>Fixed Position</li>
+    <li>Sticky Position</li>
+  </ol>
+  <div class="swim_container">
+    <div class="box boy">
+      <img src="./swim/boy.svg" alt="">
+    </div>
+    <div class="box ring">
+      <img src="./swim/ring.svg" alt="">
+    </div>
+    <div class="box water">
+      <img src="./swim/water.svg" alt="">
+    </div>
+  </div>
+</body>
+</html>
