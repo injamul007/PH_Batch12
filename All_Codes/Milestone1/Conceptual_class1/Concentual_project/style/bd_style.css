@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 100px;
+}
+
+nav button {
+  width: 116px;
+  height: 52px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: 2px solid green;
+  color: green;
+  font-weight: 900;
+}
+
+#banner {
+  max-width: 1280px;
+  margin: 0 auto;
+  height: 560px;
+  background-color: #c6e4d6;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 20px;
+}
+
+.left_section p {
+  font-size: 20px;
+  color: gray;
+  font-weight: 700;
+}
+.left_section h1 {
+  font-size: 50px;
+  font-weight: 700;
+  margin-block: 20px;
+}
+.left_section button {
+  width: 270px;
+  height: 56px;
+  padding: 10px 16px;
+  font-weight: 700;
+  background-color: #006A50;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.right_section img{
+  padding: 20px;
+  border-radius: 30px;
+  height: 400px;
+}
+
+#Strength_section {
+  max-width: 1280px;
+  margin: 0 auto;
+  margin-block: 40px;
+}
+
+#Strength_section h2 {
+  margin-bottom: 20px;
+}
+
+.parent_div {
+  display: flex;
+  gap: 16px;
+}
+
+.child {
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 16px;
+}
+
+.child img {
+  border-radius: 16px;
+  padding: 10px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.child h3 {
+  padding: 0 10px;
+}
+
+.child p {
+  padding: 0 10px;
+  margin-block: 10px;
+}
