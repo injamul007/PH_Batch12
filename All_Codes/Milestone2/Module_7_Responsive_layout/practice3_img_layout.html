@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Practice 3 Image Layout</title>
+  <style>
+    .container {
+      display: flex;
+      gap: 10px;
+    }
+    .description {
+      height: 300px;
+    }
+    .img1, .img2 {
+      padding: 10px;
+      border: 2px solid rebeccapurple;
+      width: 50%;
+    }
+    .img1 img {
+      width: 100%;
+      height: 300px;
+    }
+    .img2 img {
+      width: 100%;
+      height:300px;
+    }
+    @media screen and (max-width: 576px) {
+      .container {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+      }
+      .img1, .img2 {
+      padding: 10px;
+      width: 94%;
+      }
+      .description {
+      text-align: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="img1">
+      <div class="img_box">
+        <img src="./barcelone.avif" alt="">
+      </div>
+      <div class="description">
+      <h2>Why do we use it?</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias fugiat sapiente facere quam obcaecati illum maxime sint veritatis at culpa voluptatem natus, perferendis sunt quod dolorem autem, ipsam voluptas vel. Asperiores obcaecati quam iure, totam quis itaque porro nam voluptatem sequi molestias autem repellendus sunt inventore dolorum similique ab.</p>
+      </div>
+    </div>
+    <div class="img2">
+      <div class="description">
+      <h2>Why do we use it?</h2>
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias fugiat sapiente facere quam obcaecati illum maxime sint veritatis at culpa voluptatem natus, perferendis sunt quod dolorem autem, ipsam voluptas vel. Asperiores obcaecati quam iure, totam quis itaque porro nam  voluptatem sequi molestias autem repellendus sunt inventore dolorum similique ab.</p>
+      </div>
+      <div class="img_box">
+        <img src="./Venice.jpg" alt="">
+      </div>
+    </div>
+  </div>
+</body>
+</html>
