@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cricket Hit</title>
+  <style>
+    body {
+      height: 90vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .bat {
+      width: 150px;
+      transition: transform 0.8s linear 0.1s;
+    }
+    .ball {
+      width: 60px;
+      transition: transform 0.7s ease-in 0.26s;
+    }
+    .field:hover .bat {
+      transform: rotate(-90deg);
+      transform-origin: top right;
+    }
+    .field:hover .ball {
+      transform: translate(290px,-290px);
+      transform-origin: top right;
+    }
+    @media screen and (max-width: 576px) {
+      .field {
+        width: 100%;
+      }
+      .bat {
+        width: 100px;
+      }
+      .ball {
+        width: 50px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="field">
+    <img class="bat" src="./cricket_images/bat.png" alt="bat_img">
+    <img src="./cricket_images/ball.png" alt="ball_img" class="ball">
+  </div>
+</body>
+</html>
