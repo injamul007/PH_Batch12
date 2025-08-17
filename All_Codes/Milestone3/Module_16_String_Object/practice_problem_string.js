@@ -54,3 +54,28 @@ let allPresent = true;
 // }
 
 
+//? task-4
+
+let str = 'Hi ! are you Xavier ?';
+
+let finalResult = str.replace('X','Y');
+
+// console.log(finalResult);
+
+
+//? Task-5---
+//? Capitalize Every first Letter of each word in a String
+
+let greetings = 'hello ! how are you today?';
+
+let words = greetings.split(' ');
+console.log(words);
+let capitalGreetings = '';
+
+for (const word of words) {
+  let firstLetter = word[0].toUpperCase();
+  let sliceRemaining = word.slice(1);
+  capitalGreetings += firstLetter + sliceRemaining + ' ';
+}
+
+console.log(capitalGreetings)
