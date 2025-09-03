@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tour of DOM</title>
+  <link rel="stylesheet" href="./style.css">
+  <style>
+    h1 {
+      color: brown;
+    }
+    .bg_red {
+      background-color: red;
+    }
+    .font_size {
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>This is my header no banner</h1>
+  </header>
+  <main id="main_container">
+    <section id="old_dhaka">
+      <h1>Welcome to my DOM</h1>
+      <p>Hello <span>you</span></p>
+    <p>Hi <span>not you</span></p>
+    <p>Bye</p>
+    <button class="btn" onclick="changeStyle()">Click Me</button>
+    <ul>
+      <li class="band">Shafayet</li>
+      <li class="band">Bonobash</li>
+      <li class="band">Jalali Set</li>
+      <li class="band">Dom De re baba</li>
+      <li class="foreign">Eminem</li>
+      <li class="foreign">Anne Marie</li>
+    </ul>
+    </section>
+    <section class="food">
+      <h1 id="food_title">Food i love</h1>
+      <ul id="food_list">
+        <li id="rice" class="rice deshi_food">Rice</li>
+        <li class="deshi_food">Kacchi</li>
+        <li class="deshi_food">Tehari</li>
+        <li class="deshi_food">Biryani</li>
+        <li class="deshi_food">Vuna Khichuri</li>
+        <li class="foreign">Pizza</li>
+        <li class="foreign">Burger</li>
+        <li class="foreign">Tacos</li>
+      </ul>
+    </section>
+  </main>
+  <script>
+    // console.log("Hello from JS");
+    // console.log("Hello bole chole gelo");
+    // console.log("Document Object Model");
+
+    const student = {
+      name: 'Abul mia',
+      id: 121,
+      study: function(subject){
+        // console.log('studying subject :', subject)
+      },
+    }
+    // console.log(student.study('Math'))
+    const liCollection = document.getElementsByTagName('li');
+    // console.log(liCollection);
+    // console.log(typeof liCollection);
+    // for (const li of liCollection) {
+    //   console.log(li.innerText)
+    // }
+
+    // const allHeadings = document.getElementsByTagName('h1');
+    // console.log(allHeadings);
+    // for (const h1 of allHeadings) {
+    //   console.log(h1.innerText);
+    // }
+    const allParagraph = document.getElementsByTagName('p');
+    // console.log(allParagraph);
+    // for (const p of allParagraph) {
+    //   console.log(p.innerHTML)
+    // }
+
+    const riceElement = document.getElementsByClassName('rice')[0];
+    riceElement.innerText = 'Ice-Cream';
+    // console.log(riceElement);
+    //get by id
+    const foodTitle = document.getElementById('food_title');
+    foodTitle.style.backgroundColor = 'yellow'
+    foodTitle.innerText = 'foods i Love to eat';
+    // console.log(foodTitle)
+    // get element by class name
+    const deshiFoodsAll = document.getElementsByClassName('deshi_food');
+    // console.log(deshiFoodsAll);
+    // for (const deshiFood of deshiFoodsAll) {
+    //   console.log(deshiFoodsAll[0].style.color = 'red')
+    // }
+
+    const foreignFoodClassName = document.getElementsByClassName('foreign');
+    // console.log(foreignFoodClassName);
+    const foreignFoodQueryAll = document.querySelectorAll('#old_dhaka p span');
+    // foreignFoodQueryAll[0].innerText = 'bebi muchi';
+    // foreignFoodQueryAll[1].innerText = 'bebi muchi';
+    // console.log(foreignFoodQueryAll)
+    // for (const foreign of foreignFoodQueryAll) {
+    //   console.log(foreign.innerText)
+    // }
+    const foreignFoodQuery = document.querySelector('#old_dhaka p span');
+    foreignFoodQuery.innerText = 'Bebi muchi'
+    // console.log(foreignFoodQuery)
+    const foodItem1 = document.querySelector('#rice');
+    // console.log(foodItem1)
+    function changeStyle() {
+      const btn = document.querySelector('.btn');
+      btn.style.backgroundColor = 'green'
+      btn.style.color = 'white'
+      btn.style.borderRadius = '10px'
+    }
+  </script>
+  <script src="./js/hello.js"></script>
+  <script src="./js/cssInJS.js"></script>
+  <script src="./js/child.js"></script>
+  <script src="./js/append.js"></script>
+</body>
+</html>
