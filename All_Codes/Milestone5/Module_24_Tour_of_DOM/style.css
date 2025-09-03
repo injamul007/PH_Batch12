@@ -1,0 +1,29 @@
+
+
+.bg_lightblue {
+  background-color: lightblue;
+}
+
+.margin_bottom {
+  margin-bottom: 12px;
+}
+
+.padding {
+  padding: 14px;
+}
+
+.border_radius {
+  border-radius: 14px;
+}
+
+.section_styles {
+  background-color: lightblue;
+  margin-bottom: 12px;
+  padding: 14px;
+  border-radius: 14px;
+  border: 3px solid grey;
+}
+
+.bg_teal {
+  background-color: teal;
+}
