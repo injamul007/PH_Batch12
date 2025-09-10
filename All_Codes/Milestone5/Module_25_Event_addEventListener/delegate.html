@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event Delegate</title>
+</head>
+<body>
+  <h1>Explore the concept of event delegate</h1>
+  <ol id="item_list">
+    <li class="item">My Awesome item - 1</li>
+    <li class="item">My Awesome item - 2</li>
+    <li class="item">My Awesome item - 3</li>
+    <li class="item">My Awesome item - 4</li>
+    <li class="item">My Awesome item - 5</li>
+    <li class="item">My Awesome item - 6</li>
+  </ol>
+  <br>
+  <br>
+  <br>
+  <br>
+  <input id="input" placeholder="write here" type="text">
+  <button id="add_item_btn">Add New Item</button>
+  <script>
+    const items = document.getElementsByClassName('item');
+    // for(const item of items) {
+    //   // console.log(item)
+    //   item.addEventListener('click', function(event) {
+    //     event.target.parentNode.removeChild(event.target)
+    //   })
+    // }
+    //? add new btn 
+    const addBtn = document.getElementById('add_item_btn');
+    addBtn.addEventListener('click', function() {
+      const inputTask = document.getElementById('input');
+      const textInput = inputTask.value;
+      console.log(textInput)
+      const listItem = document.getElementById('item_list');
+      const newLi = document.createElement('li');
+      newLi.classList.add('item');
+      newLi.innerText = textInput;
+      listItem.appendChild(newLi);
+      // listItem.addEventListener('click', function(event) {
+        //   // console.log(event.target)
+      //   event.target.parentNode.removeChild(event.target)
+      // })
+    })
+
+    //? add list item (ol)
+    //? Event Delegation --->
+    const olList = document.getElementById('item_list');
+    olList.addEventListener('click', function(event) {
+      event.target.parentNode.removeChild(event.target)
+    })
+  </script>
+</body>
+</html>
