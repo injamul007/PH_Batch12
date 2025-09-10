@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comment Box</title>
+  <style>
+    .comment {
+      border: 2px solid black;
+      background-color: bisque;
+      margin: 10px;
+      padding: 10px;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h1>My Awesome Comment Box. Write what is in your mind !!!</h1>
+    <h3>All comments here</h3>
+    <div id="comment_container">
+    <p class="comment">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Alias ducimus natus unde eveniet officia, accusamus doloremque animi possimus quasi maxime iste, necessitatibus suscipit amet dolores voluptatibus ratione cupiditate, nulla aliquid!</p>
+    <p class="comment">Expedita consequuntur maiores voluptatum vero dolor delectus, commodi inventore error itaque culpa numquam assumenda, quam cumque in molestiae dolore sapiente nihil iusto recusandae nesciunt, rerum laudantium quia laborum. Atque, accusamus?</p>
+    <p class="comment">Odio eligendi, officiis, doloremque commodi, maiores impedit non quisquam libero reprehenderit corporis voluptate vero! Reprehenderit delectus eligendi, consequuntur nobis officia fugiat tempore nisi consectetur alias a. Porro, non eveniet? Impedit.</p>
+  </div>
+  <form>
+    <textarea id="comment_text_box" cols="60" rows="4"></textarea>
+    <br>
+    <br>
+    <button id="post_comment_btn">Post Comment</button>
+  </form>
+</section>
+<script>
+  //? step-1: set an event handler to the btn
+  const postBtn = document.getElementById('post_comment_btn');
+  postBtn.addEventListener('click', function(e) {
+    e.preventDefault();
+    //? step-2: get the text written in the comment text area
+    const commentTextBox = document.getElementById('comment_text_box');
+    const textComment = commentTextBox.value;
+    //? step-3: get the parent node where publish the comment
+    const commentContainer = document.getElementById('comment_container');
+    //? step-4: create a comment paragraph and set the inner text
+    const newCommentPara = document.createElement('p');
+    newCommentPara.innerText = textComment;
+    newCommentPara.classList.add('comment');
+    //? step-5: append the new p tag to the parent node
+    commentContainer.appendChild(newCommentPara);
+    //? step-6: clear the textArea
+    commentTextBox.value = '';
+  })
+</script>
+</body>
+</html>
