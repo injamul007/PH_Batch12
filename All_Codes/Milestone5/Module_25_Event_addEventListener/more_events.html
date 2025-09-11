@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>More Events</title>
+</head>
+<body>
+  <section>
+    <input type="text" placeholder="your name" id="user_name">
+    <br>
+    <br>
+    <button id="btn_mouse">Micky Mouse</button>
+  </section>
+  <script>
+    const btnMouse = document.getElementById('btn_mouse');
+    // btnMouse.addEventListener('mouseenter', function() {
+    //   console.log('event triggered')
+    // })
+    // btnMouse.addEventListener('mousemove', function() {
+    //   console.log('event triggered')
+    // })
+    const userName = document.getElementById('user_name');
+    // userName.addEventListener('focus', function() {
+    //   console.log("user about to write");
+    // })
+    // userName.addEventListener('blur', function() {
+    //   console.log("user done about writing");
+    // })
+    
+    userName.addEventListener('keyup', function(event) {
+      console.log("typing", event.target.value);
+      // console.log(userName.value)
+    })
+    userName.addEventListener('blur', function() {
+      console.log("user done about writing");
+    })
+  </script>
+</body>
+</html>
