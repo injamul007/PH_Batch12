@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JSON Learning</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      max-width: 1160px;
+      margin: 0 auto;
+    }
+    main {
+      display: flex;
+      flex-direction: column;
+    }
+    #post_container {
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      gap: 20px;
+    }
+    .postCard {
+      /* width: 400px;
+      height: 350px; */
+      background-color: bisque;
+      padding: 10px 0;
+      border-radius: 10px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h1>ALL Post</h1>
+  <main>
+    <div class="btn_div">
+    <button id="load_btn">Load Data</button>
+    <button onclick="loadPost()">Load Posts</button>
+  </div>
+  <div id="post_container"></div>
+  </main>
+  <script src="./json.js"></script>
+</body>
+</html>
