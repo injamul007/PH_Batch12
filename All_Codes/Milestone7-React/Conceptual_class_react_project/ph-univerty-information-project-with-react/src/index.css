@@ -1,0 +1,7 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+
+.toggle_btn {
+  @apply btn bg-purple-100 text-purple-500
+}
