@@ -35,12 +35,7 @@
 
 // // Your web app's Firebase configuration
 // const firebaseConfig = {
-//   apiKey: "AIzaSyAKtKIIJN-2ObUyxXsFrbXAAQ8P5Eoj63M",
-//   authDomain: "simple-dimple-auth-5cbd4.firebaseapp.com",
-//   projectId: "simple-dimple-auth-5cbd4",
-//   storageBucket: "simple-dimple-auth-5cbd4.firebasestorage.app",
-//   messagingSenderId: "844300815917",
-//   appId: "1:844300815917:web:01cd3a08052f1c52d032a4"
+//   
 // };
 
 // // Initialize Firebase
