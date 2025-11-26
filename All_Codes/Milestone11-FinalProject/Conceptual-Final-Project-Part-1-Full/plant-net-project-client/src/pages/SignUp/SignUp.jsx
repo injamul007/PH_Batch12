@@ -4,7 +4,7 @@ import useAuth from "../../hooks/useAuth";
 import { toast } from "react-hot-toast";
 import { TbFidgetSpinner } from "react-icons/tb";
 import { useForm } from "react-hook-form";
-import axios from "axios";
+import { imageUpload } from "../../Utils";
 
 const SignUp = () => {
   const DEFAULT_AVATAR =
@@ -46,16 +46,7 @@ const SignUp = () => {
       let imageURL = DEFAULT_AVATAR;
 
       if (imageFile) {
-        const formData = new FormData();
-        formData.append("image", imageFile);
-
-        const imgData = await axios.post(
-          `https://api.imgbb.com/1/upload?key=${
-            import.meta.env.VITE_IMGBB_API_KEY
-          }`,
-          formData
-        );
-        imageURL = imgData?.data?.data?.url || DEFAULT_AVATAR;
+        imageURL = await imageUpload(imageFile) || DEFAULT_AVATAR;
       }
 
       //3. Save username & profile photo
