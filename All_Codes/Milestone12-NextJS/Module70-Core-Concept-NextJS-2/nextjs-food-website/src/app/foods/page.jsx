@@ -16,7 +16,7 @@ const getFoods = async() => {
 const FoodPage = async() => {
   const foods = await getFoods();
   return (
-    <div>
+    <div className="w-11/12 mx-auto">
       <h2 className='text-4xl font-bold text-center'>Total <span className='text-yellow-500'>{foods.length}</span> Foods found</h2>
       <div className='grid grid-cols-3 gap-4 my-5'>
         {
