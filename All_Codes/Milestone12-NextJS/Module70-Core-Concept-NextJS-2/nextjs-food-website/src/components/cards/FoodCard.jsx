@@ -1,6 +1,9 @@
 'use client'
+
+import Link from "next/link";
+
 const FoodCard = ({ food }) => {
-  const { title, foodImg, price, category } = food;
+  const { title, foodImg, price, category, id } = food;
 
   return (
     <div className="w-full max-w-sm rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
@@ -35,12 +38,11 @@ const FoodCard = ({ food }) => {
             Add to Cart
           </button>
 
-          <button
-            onClick={() =>handleViewDetails(food.id)}
-            className="flex-1 border border-gray-300 hover:bg-gray-300 hover:text-gray-600 text-sm font-medium py-2 rounded-lg"
+          <Link href={`/foods/${id}`}
+            className="flex-1 border border-gray-300 hover:bg-gray-300 hover:text-gray-600 text-sm font-medium text-center py-2 rounded-lg"
           >
             View Details
-          </button>
+          </Link>
         </div>
       </div>
     </div>
