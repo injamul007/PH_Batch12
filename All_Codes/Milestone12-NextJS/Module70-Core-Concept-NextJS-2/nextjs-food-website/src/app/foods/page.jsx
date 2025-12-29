@@ -4,19 +4,20 @@ import React from 'react';
 import CartItems from './CartItems';
 import InputSearch from '@/components/InputSearch';
 
-const getFoods = async() => {
+const getFoods = async(search) => {
   try {
-    const res = await fetch('https://taxi-kitchen-api.vercel.app/api/v1/foods/random')
+    const res = await fetch(`https://taxi-kitchen-api.vercel.app/api/v1/foods/random?search=${search}`)
     const data = await res.json()
-    await new Promise((resolve)=> setTimeout(resolve,2000))
+    await new Promise((resolve)=> setTimeout(resolve,1000))
     return data.foods || []
   } catch (error) {
     console.log(error.message)
   }
 }
 
-const FoodPage = async() => {
-  const foods = await getFoods();
+const FoodPage = async({searchParams}) => {
+  const {search=''} = await searchParams;
+  const foods = await getFoods(search);
   return (
     <div className="w-11/12 mx-auto my-12">
       <div className='flex items-center gap-72'>
