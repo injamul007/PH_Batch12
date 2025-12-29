@@ -1,6 +1,5 @@
-'use client'
-
 import Link from "next/link";
+import CartButtons from "../buttons/CartButtons";
 
 const FoodCard = ({ food }) => {
   const { title, foodImg, price, category, id } = food;
@@ -31,15 +30,10 @@ const FoodCard = ({ food }) => {
 
         {/* Buttons */}
         <div className="flex gap-3 pt-3">
-          <button
-            onClick={() => onAddToCart(food)}
-            className="flex-1 bg-green-600 hover:bg-green-700 text-white text-sm font-medium py-2 rounded-lg"
-          >
-            Add to Cart
-          </button>
+          <CartButtons food={food}></CartButtons>
 
           <Link href={`/foods/${id}`}
-            className="flex-1 border border-gray-300 hover:bg-gray-300 hover:text-gray-600 text-sm font-medium text-center py-2 rounded-lg"
+            className="flex-1 border border-gray-300 hover:bg-gray-300 hover:text-gray-600 text-sm font-medium text-center duration-200 py-2 rounded-lg"
           >
             View Details
           </Link>

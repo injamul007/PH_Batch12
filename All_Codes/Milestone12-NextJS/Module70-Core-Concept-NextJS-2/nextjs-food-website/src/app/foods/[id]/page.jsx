@@ -20,7 +20,7 @@ const FoodDetails = async ({ params }) => {
     <div className="max-w-5xl mx-auto p-6">
       <div className=" border border-gray-200 rounded-xl shadow-sm overflow-hidden">
         {/* Image Section */}
-        <div className="w-full h-72 md:h-96 overflow-hidden">
+        <div className="w-full h-full md:h-96 overflow-hidden">
           <img
             src={foodImg}
             alt={title}
