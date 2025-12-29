@@ -3,6 +3,7 @@ import FoodCard from '@/components/cards/FoodCard';
 import React from 'react';
 import CartItems from './CartItems';
 import InputSearch from '@/components/InputSearch';
+import style from "./food.module.css"
 
 const getFoods = async(search) => {
   try {
@@ -21,7 +22,7 @@ const FoodPage = async({searchParams}) => {
   return (
     <div className="w-11/12 mx-auto my-12">
       <div className='flex items-center gap-72'>
-        <h2 className='text-4xl font-bold'>Total <span className='text-yellow-500'>{foods.length}</span> Foods found</h2>
+        <h2 className={`text-4xl font-bold ${style.bgRed}`}>Total <span className='text-yellow-500'>{foods.length}</span> Foods found</h2>
         <div>
           <InputSearch></InputSearch>
         </div>

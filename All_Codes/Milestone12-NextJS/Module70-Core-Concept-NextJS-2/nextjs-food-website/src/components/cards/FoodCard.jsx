@@ -1,18 +1,22 @@
 import Link from "next/link";
 import CartButtons from "../buttons/CartButtons";
+import Image from "next/image";
+import style from "@/app/foods/food.module.css"
 
 const FoodCard = ({ food }) => {
   const { title, foodImg, price, category, id } = food;
 
   return (
-    <div className="w-full max-w-sm rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition">
-      
+    <div className={`w-full max-w-sm rounded-xl border border-gray-200 shadow-sm hover:shadow-md transition ${style.bgRed}`}>
       {/* Image */}
-      <div className="h-48 w-full overflow-hidden rounded-t-xl">
-        <img
+      <div className="h-48 w-full overflow-hidden rounded-t-xl relative">
+        <Image
           src={foodImg}
           alt={title}
-          className="h-full w-full object-cover"
+          fill
+          className="object-cover"
+          sizes="100vw"
+          priority={false}
         />
       </div>
 
@@ -32,7 +36,8 @@ const FoodCard = ({ food }) => {
         <div className="flex gap-3 pt-3">
           <CartButtons food={food}></CartButtons>
 
-          <Link href={`/foods/${id}`}
+          <Link
+            href={`/foods/${id}`}
             className="flex-1 border border-gray-300 hover:bg-gray-300 hover:text-gray-600 text-sm font-medium text-center duration-200 py-2 rounded-lg"
           >
             View Details
