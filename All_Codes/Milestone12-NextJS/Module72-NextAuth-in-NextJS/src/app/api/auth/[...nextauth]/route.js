@@ -13,7 +13,11 @@ const userList = [
   {
     name: 'kablu',
     password: '8901'
-  }
+  },
+  {
+    name: 'kablu',
+    password: '8901'
+  },
 ]
 
 export const authOptions = {
