@@ -5,7 +5,10 @@ import { SiMongodb } from "react-icons/si";
 import Link from "next/link";
 import LoginButton from "@/components/LoginButton";
 import UserCard from "@/components/UserCard";
-export default function Home() {
+import { getServerSession } from "next-auth";
+import { authOptions } from "./api/auth/[...nextauth]/route";
+export default async function Home() {
+  const session = await getServerSession(authOptions)
   return (
     <div className="min-h-screen relative flex flex-col justify-center items-center gap-5 ">
       <UserCard></UserCard>
@@ -27,6 +30,8 @@ export default function Home() {
           Register
         </Link>
       </div>
+      <h2 className='font-bold'>User - Client</h2>
+      <div className='border-2 p-2 rounded'>{JSON.stringify(session)}</div>
     </div>
   );
 }
