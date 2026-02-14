@@ -6,6 +6,7 @@ import bcrypt from "bcryptjs"
 export const postUser = async(payload) => {
   console.log(payload)
 
+  //? Validation to check the payload has value or not
   if(!payload.email || !payload.password || Object.keys(payload).length===0) {
     return{
       status: false,
