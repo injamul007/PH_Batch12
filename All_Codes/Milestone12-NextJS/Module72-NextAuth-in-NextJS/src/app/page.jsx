@@ -30,7 +30,7 @@ export default async function Home() {
           Register
         </Link>
       </div>
-      <h2 className='font-bold'>User - Client</h2>
+      <h2 className='font-bold'>User - Server</h2>
       <div className='border-2 p-2 rounded'>{JSON.stringify(session)}</div>
     </div>
   );
