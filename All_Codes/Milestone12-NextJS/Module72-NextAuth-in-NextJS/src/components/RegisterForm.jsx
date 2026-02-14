@@ -1,7 +1,9 @@
 "use client";
 
+import { postUser } from "@/actions/server/auth";
+
 const RegisterForm = () => {
-  const handleSubmit = (e) => {
+  const handleSubmit = async(e) => {
     e.preventDefault();
 
     const form = e.target;
@@ -12,10 +14,11 @@ const RegisterForm = () => {
       contactNo: form.contactNo.value,
       password: form.password.value,
       image: form.image.value,
-      bloodgroup: form.bloodgroup.value,
+      bloodGroup: form.bloodGroup.value,
     };
 
-    console.log("Submitted Data:", formData);
+    const result = await postUser(formData)
+    alert(result.message)
   };
 
   const inputClass =
@@ -50,7 +53,7 @@ const RegisterForm = () => {
 
         <div className="flex flex-col space-y-1">
           <label>Blood Group</label>
-          <select name="bloodgroup" required className={inputClass}>
+          <select name="bloodGroup" required className={inputClass}>
             <option value="">Select</option>
             <option value="A+">A+</option>
             <option value="A-">A-</option>
