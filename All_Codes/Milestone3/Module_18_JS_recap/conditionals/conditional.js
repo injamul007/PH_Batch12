@@ -62,3 +62,8 @@
 // } else {
 //     console.log(year, " is not a Leap year");
 // };
+
+
+//? nullish coercing operator
+const result = null ?? "mkl"
+console.log(result)
