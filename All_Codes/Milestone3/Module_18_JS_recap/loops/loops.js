@@ -121,37 +121,109 @@
 //? Q7. build a simple text-based adventure game !;
 
 
-let playAgain = true;
+// let playAgain = true;
 
-while (playAgain) {
-  alert("You wake up in a forest");
-  let userChoice = prompt("Will you go 'left' or 'right' ??");
+// while (playAgain) {
+//   alert("You wake up in a forest");
+//   let userChoice = prompt("Will you go 'left' or 'right' ??");
 
-  if (userChoice === "left") {
-    alert("You walk into a swamp! You see something shiny in the mud");
-    userChoice = prompt("Do you pick it up ?? (yes or no)");
-    if (userChoice === "yes") {
-      alert("It's a magical stone ! you are teleported to safely. You win");
-    } else if (userChoice === "no") {
-      alert("you sink slowly into the mud. Game Over");
-    }
-  } else if (userChoice === "right") {
-    alert("You find a cave...!");
-    userChoice = prompt("Do you enter the cave?? (yes or no)");
-    if (userChoice === "yes") {
-      alert("A dragon wakes up and chases you away. You barely escape !");
-    } else if (userChoice === "no") {
-      alert(
-        "you set up camp outside the cave. A peaceful night under the stars. You will be alive"
-      );
-    }
-  }
+//   if (userChoice === "left") {
+//     alert("You walk into a swamp! You see something shiny in the mud");
+//     userChoice = prompt("Do you pick it up ?? (yes or no)");
+//     if (userChoice === "yes") {
+//       alert("It's a magical stone ! you are teleported to safely. You win");
+//     } else if (userChoice === "no") {
+//       alert("you sink slowly into the mud. Game Over");
+//     }
+//   } else if (userChoice === "right") {
+//     alert("You find a cave...!");
+//     userChoice = prompt("Do you enter the cave?? (yes or no)");
+//     if (userChoice === "yes") {
+//       alert("A dragon wakes up and chases you away. You barely escape !");
+//     } else if (userChoice === "no") {
+//       alert(
+//         "you set up camp outside the cave. A peaceful night under the stars. You will be alive"
+//       );
+//     }
+//   }
 
-  userChoice = prompt("Do you want to play again?? (yes or no)");
-  if (userChoice === "yes") {
-        playAgain = true;
-    } else if (userChoice === 'no') {
-        playAgain = false;
-        alert("thanks for playing the game !");
-  }
-}
+//   userChoice = prompt("Do you want to play again?? (yes or no)");
+//   if (userChoice === "yes") {
+//         playAgain = true;
+//     } else if (userChoice === 'no') {
+//         playAgain = false;
+//         alert("thanks for playing the game !");
+//   }
+// }
+
+
+
+// for(let i = 0; i <= 20; i++) {
+//   console.log(i)
+// }
+
+// let i = 0
+// while(i <= 10) {
+//   console.log(i)
+//   i++
+// }
+
+// 1. print all even numbers 0 to 100
+
+// for(let i = 0; i <= 100; i++) {
+//   if(i % 2 === 0) {
+//     console.log(i)
+//   }
+// }
+
+//? 2. calculate how many vowels are in a string using loop
+
+// let str = 'hello'
+// let countVowel = 0
+// let countConsonant = 0
+
+// for (let i = 0; i<str.length; i++) {
+//   if(str[i] === 'a' || str[i] === 'e' || str[i] === 'i' || str[i] === 'o' || str[i] === 'u') {
+//     countVowel++
+//   } else {
+//     countConsonant++
+//   }
+// }
+
+// console.log(countVowel, countConsonant)
+
+
+//? 1. Calculate sum of first "n" numbers
+
+// let sum = 0
+
+// let n = Number(prompt('Enter your fist n Number'))
+
+// for(let i = 0; i <= 10; i++) {
+//   sum += i
+// }
+
+// console.log(sum)
+
+//? 2. calculate the sum of numbers from "m" to "n"
+
+//  let sum = 0
+
+// let m = Number(prompt('Enter your starting Number'))
+// let n = Number(prompt('Enter your Ending Number'))
+
+// for(let i = m; i <= n; i++) {
+//   sum += i
+// }
+
+
+//? 3. print all odd number from 0 to "n"
+
+// let n = Number(prompt('Enter your Ending Number'))
+
+// for(let i = 0; i <= 20; i++) {
+//   if(i % 2 !== 0) {
+//     console.log(i)
+//   }
+// }
+
