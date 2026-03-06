@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Learning DOM</title>
+  <style>
+    body {
+      background-color: lightskyblue;
+    }
+    div {
+      border: 2px solid black;
+      background-color: lightcoral;
+      margin: 50px;
+      padding: 30px;
+    }
+    p {
+      border: 2px solid black;
+      background-color: lightsteelblue;
+    }
+    .old_class {
+      color: red;
+    }
+    .new_class {
+      color: white;
+    }
+    .bg_aqua_h1 {
+      background-color: aqua;
+    }
+    .font_size {
+      font-size: 70px;
+    }
+    .text_center {
+      text-align: center;
+    }
+    .dark {
+      background-color: black;
+    }
+    button {
+      width: 40px;
+      height: 40px;
+      font-size: 20px;
+    }
+    span {
+      font-size: 24px;
+      margin-inline: 10px;
+    }
+    .sub_btn {
+      width: inherit;
+    }
+  </style>
+</head>
+<body>
+  <!-- <div>
+    <p>para1 <button>Delete</button></p>
+    <p class="p2">para2 <button>Delete</button></p>
+    <p>para3 <button>Delete</button></p>
+  </div> -->
+  <!-- <button class="add_btn">add</button> -->
+   <div class="old" title="this is div">This is div</div>
+   <!-- <button>Change Theme</button> -->
+   <!-- <button>First Button</button> -->
+    <button class="decre_btn">-</button>
+    <span class="counter_value">0</span>
+    <button class="incre_btn">+</button>
+    <br>
+    <br>
+    <br>
+    <form>
+      <input id="name" type="text" placeholder="Enter your name">
+      <br>
+      <br>
+      <input id="email" type="email" placeholder="Enter your email">
+      <br>
+      <br>
+      <button class="sub_btn" type="submit">Submit</button>
+    </form>
+  <script src="./js/dom2.js"></script>
+</body>
+</html>
