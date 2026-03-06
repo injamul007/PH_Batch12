@@ -245,3 +245,31 @@
 //   }
 // }
 
+//? 5. simple password checker (fixed attempt)
+
+// let password = "alpha"
+// let noOfAttempt = 0;
+// let userPass = null;
+
+// while(password !== userPass && noOfAttempt < 3) {
+//   userPass = prompt('Enter your password')
+//   if(password === userPass) {
+//     alert(`Password matched successfully with ${noOfAttempt+1} attempt`)
+//   } else if (noOfAttempt > 3) {
+//     alert('Your attempt is over, try again')
+//   } else {
+//     alert(`password did not matched, try again with ${noOfAttempt} attempt `)
+//     noOfAttempt++
+//   }
+// }
+
+//? 6. Create a program to find the factorial of "n"
+
+// let n = 7;
+// let factorial = 1;
+
+// for(let i = 1; i <= n; i++) {
+//   factorial = factorial * i
+// }
+
+// console.log(factorial)
