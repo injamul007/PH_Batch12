@@ -227,3 +227,21 @@
 //   }
 // }
 
+//? Create a "Number Knock" game. (as the user to keep guessing the number until the user enters correct guess).
+
+// let computerGuess = 3
+// let userGuess = null;
+
+// while(userGuess !== computerGuess) {
+//   userGuess = Number(prompt('guess the number'))
+//   if (isNaN(userGuess) || userGuess == "") {
+//     alert('this is not an valid number')
+//   } else if(userGuess > computerGuess) {
+//     alert('your number is high, try again')
+//   } else if (userGuess < computerGuess) {
+//     alert('your number is low, try again')
+//   } else {
+//     alert('your guess is correct')
+//   }
+// }
+
