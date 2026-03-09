@@ -90,4 +90,21 @@ const generateUsername = (fullname)=> {
 }
 
 const result = generateUsername('injamul hoque tonmoy')
-console.log(result)
+// console.log(result)
+
+
+function generateColor(color) {
+  if(!color || typeof color !== "string") {
+    console.log("give it a valid color string")
+  } else if (color === "red") {
+    console.log('please stop')
+  } else if (color === "yellow") {
+    console.log('please wait')
+  } else if (color === "green") {
+    console.log('you can go now')
+  } else {
+    console.log('this color has no sign declare')
+  }
+}
+
+console.log(generateColor("dfdf"))
