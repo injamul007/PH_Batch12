@@ -139,4 +139,24 @@
 // console.log(str.split(' '));
 
 
+//? if we write the variables using backticks then it called template literals
+//? and this backticks using method called string interpolation
 
+// let str = new String('hello')
+// console.log(str)
+
+// let str = 'Hello World'
+
+// str[4] = 'i'
+// console.log(str)
+
+// let str2 = ""
+
+// for(let ch of str) {
+//   str2 += ch + " "
+// }
+// console.log(str2)
+
+// for(let key in str) {
+//   console.log(key)
+// }
