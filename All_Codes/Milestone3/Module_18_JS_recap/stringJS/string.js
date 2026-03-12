@@ -185,3 +185,36 @@
 // console.log(firstName.includes('oss'))
 // console.log(firstName.indexOf('i'))
 // console.log(firstName.charAt(1))
+
+
+// let str = "i am a boy"
+
+// str = str.replace("boy", "girl")
+
+// console.log(str)
+
+// const generateUsername = (fullname)=> {
+//   return `@${fullname.trim().toLowerCase().replaceAll(" ", "")}_${fullname.length}`
+// }
+
+// const result = generateUsername("boss tos   s")
+// console.log(result)
+
+
+// const countedCharacter = (str,char)=> {
+//   let count = 0;
+//   for(let index in str) {
+//     if(str[index].toLowerCase() === char.toLowerCase()) {
+//       console.log("Occurrence Positions = ",index)
+//       count++
+//     }
+//   }
+//   return count
+// }
+
+// console.log(countedCharacter('boSs', 's'))
+
+
+let str = "hello i am the boss"
+
+console.log(str.split(" ").length)
