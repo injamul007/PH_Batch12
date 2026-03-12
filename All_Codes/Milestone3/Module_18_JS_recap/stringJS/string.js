@@ -160,3 +160,28 @@
 // for(let key in str) {
 //   console.log(key)
 // }
+
+// let str = "Hel   lo"
+// // let strCopy = str.toUpperCase()
+// // let trimStr = str.trim()
+// let middleTrimStr = str.replaceAll(" ", "")
+// // console.log(trimStr)
+// console.log(str)
+// console.log(middleTrimStr)
+
+
+// let firstName = "@injamul hoque tonmoy theboss"
+// let middleName = " boss2"
+// let lastName = " boss3"
+
+// console.log(firstName.split(" "))
+// console.log(firstName.length)
+// console.log(firstName.slice(13,19))
+// console.log(firstName.slice(-4,26)) --> it give negative value also
+// console.log(firstName.substring(-4,26)) --> does not give negative value
+// console.log(firstName.replace("o","a"))
+// let fullName = firstName.concat(middleName, lastName)
+// console.log(firstName.includes('oss'))
+// console.log(firstName.includes('oss'))
+// console.log(firstName.indexOf('i'))
+// console.log(firstName.charAt(1))
