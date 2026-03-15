@@ -85,3 +85,74 @@
 // console.log(arr)
 // console.log(test)
 
+
+// let arr = ['mango', 'lichi', 'jackfruit']
+
+// let test = arr.includes("lichi")
+// console.log(arr)
+// console.log(test)
+
+
+// let arr = ['mango', 'lichi', 'jackfruit']
+
+// let test = arr.toString()
+
+// console.log(arr)
+// console.log(test)
+
+
+// let arr = ['rahim', 'fahim', 'mahim']
+
+// let test = arr.indexOf('mahim')
+
+// console.log(arr)
+// console.log(test)
+
+
+// let arr = ['rahim', 'fahim', 'mahim']
+
+// const test = arr.reverse()
+
+// console.log(arr)
+// console.log(test)
+// console.log(arr)
+
+// const arr = ['mango', 'lichi', 'mango', 'boss', 'toss']
+// const test = arr.find(f => f === 'boss')
+// const test = arr.filter(f => f === 'mango')
+
+// console.log(arr)
+// console.log(test)
+
+
+// const str = "i love programming"
+
+// let newVal = ""
+// for(let i = 0; i<str.length; i++) {
+//   console.log(str[i])
+//   newVal = str[i] + newVal
+// }
+// console.log(str)
+// console.log(newVal)
+
+// const test = str.split(" ").reverse().join(" ")
+
+// console.log(test)
+
+// const arr = ['spider-man',['hulk','widow',['boss',['iron-man']],'thor']]
+
+// console.log(arr.flat(Infinity))
+
+
+// const arr = [10,5,1,20]
+// const arr = ['ca','g','fb','ah','ih']
+
+// const test = arr.sort((a,b) => {
+//   console.log(`a is -> ${a}, b is -> ${b}`)
+//   return a-b
+// })
+
+// console.log(arr)
+// console.log(test)
+
+
