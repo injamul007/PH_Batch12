@@ -78,3 +78,10 @@
 // console.log(newArr)
 // console.log(newArr2)
 
+
+// let arr = ['mango', 'lichi', 'jackfruit']
+// let test = arr.join("/")
+
+// console.log(arr)
+// console.log(test)
+
