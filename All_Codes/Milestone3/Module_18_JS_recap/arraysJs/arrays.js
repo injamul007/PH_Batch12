@@ -18,7 +18,6 @@
 
 // console.log(arr)
 
-
 // let arr = new Array("hello", 2, true)
 
 // console.log(arr)
@@ -47,7 +46,6 @@
 
 // console.log(arr[0])
 // console.log(arr)
-
 
 // let arr = [1,2,3,4,5,6]
 
@@ -78,20 +76,17 @@
 // console.log(newArr)
 // console.log(newArr2)
 
-
 // let arr = ['mango', 'lichi', 'jackfruit']
 // let test = arr.join("/")
 
 // console.log(arr)
 // console.log(test)
 
-
 // let arr = ['mango', 'lichi', 'jackfruit']
 
 // let test = arr.includes("lichi")
 // console.log(arr)
 // console.log(test)
-
 
 // let arr = ['mango', 'lichi', 'jackfruit']
 
@@ -100,14 +95,12 @@
 // console.log(arr)
 // console.log(test)
 
-
 // let arr = ['rahim', 'fahim', 'mahim']
 
 // let test = arr.indexOf('mahim')
 
 // console.log(arr)
 // console.log(test)
-
 
 // let arr = ['rahim', 'fahim', 'mahim']
 
@@ -123,7 +116,6 @@
 
 // console.log(arr)
 // console.log(test)
-
 
 // const str = "i love programming"
 
@@ -143,7 +135,6 @@
 
 // console.log(arr.flat(Infinity))
 
-
 // const arr = [10,5,1,20]
 // const arr = ['ca','g','fb','ah','ih']
 
@@ -155,4 +146,41 @@
 // console.log(arr)
 // console.log(test)
 
+// const arr = [1,2,3,4,5]
 
+// arr.map((elem,index) => {
+//   arr[index] = elem *2
+// })
+// const forEachArr = arr.forEach(elem => console.log(elem))
+// arr.forEach((elem,index) => {
+//   arr[index] = elem *2
+// })
+// const filterArr = arr.filter(elem => elem % 2 !== 0)
+// const reduceArr = arr.reduce((prevValue, currValue) => {
+//   return prevValue + currValue
+// })
+
+// const n = 5
+
+// const reduceArr = Array.from({length:n}, (_,i) => i+1).reduce((acc,curr)=>{
+//   return curr * acc
+// })
+
+// const reduceArr = Array.from({length: 5},(_,i) => i+1).map(elem => elem)
+
+// console.log(arr)
+// console.log(reduceArr)
+// console.log(filterArr)
+// console.log(forEachArr)
+// console.log(mapArr)
+
+
+// const arr = [1, 2, 3, 4, 5];
+
+// const reduceArr = arr.reduce((acc,curr) => {
+//   console.log(`acc->${acc},,curr->${curr}`)
+//   return acc + curr
+// })
+
+// console.log(arr)
+// console.log(reduceArr)
