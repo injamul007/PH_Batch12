@@ -67,3 +67,14 @@
 // console.log(arr)
 // console.log(test)
 
+// let arr = [1,2,3]
+// let arr2 = [4,5,6]
+// let arr3 = [7,8,9]
+// const newArr = arr.concat(arr2,arr3)
+// const newArr2 = [...arr,...arr2,...arr3]
+// console.log(arr)
+// console.log(arr2)
+// console.log(arr3)
+// console.log(newArr)
+// console.log(newArr2)
+
