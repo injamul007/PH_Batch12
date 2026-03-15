@@ -247,4 +247,5 @@
 //   return firstLetterCap + restOfTheLetters
 // })
 
-// console.log(mapStr)
+// console.log(str)
+// console.log(mapStr.join(" "))
