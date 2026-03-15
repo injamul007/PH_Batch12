@@ -184,3 +184,67 @@
 
 // console.log(arr)
 // console.log(reduceArr)
+
+//? 1.
+// const arr = [77,88,66,84,96]
+// const sum = arr.reduce((acc,curr) => acc + curr)
+// const avgMarks = sum / arr.length
+// console.log(avgMarks)
+
+//? 2. 
+// const newArr = new Array(20).fill(0)
+// console.log(newArr)
+
+//? 3. 
+// const n = 5
+// const lengthOfArr = Array.from({length: n}, (_,i) => i+1)
+// const arr = new Array(n).fill(0)
+// arr.forEach((_,index) => {
+//   arr[index] = index + 1
+// })
+// console.log(arr)
+
+//? 4.
+// const heroes = ['iron-man','captain','black-widow','wanda','hulk','black-panther']
+
+// heroes.push('spider-man')
+// heroes.unshift('thor')
+// heroes.splice(3,1,"hawkeye")
+// console.log(heroes.indexOf('captain'))
+
+//? 5.
+// const test = 'true'
+// console.log(Array.isArray(test))
+// console.log(Array.from(test))
+
+//? 6.
+// const a = 2
+// const b = 'hello'
+// const c = {name:"boss"}
+// const d = [1,2]
+// console.log(Array.of(a,b,c,d))
+
+//? 7.
+// const isPalindrome = (str) => {
+//   const strNum = str.toString()
+//   const strLowerCase = strNum.toLowerCase()
+//   const reverseStr = strLowerCase.split("").reverse().join("")
+//   if(strLowerCase === reverseStr) {
+//     return "it is a palindrome"
+//   } else {
+//     return "not a palindrome"
+//   }
+// }
+
+// const result = isPalindrome(121)
+// console.log(result)
+
+//? 8.
+// const str = 'i love programming'
+// const mapStr = str.split(' ').map(elem => {
+//   const firstLetterCap = elem[0].toUpperCase()
+//   const restOfTheLetters = elem.slice(1)
+//   return firstLetterCap + restOfTheLetters
+// })
+
+// console.log(mapStr)
