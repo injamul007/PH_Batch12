@@ -74,4 +74,80 @@
 // console.log(person)
 
 
+//?  Q&A
+//? 1.
+// const person = {
+//   name: "boss",
+//   age: 32,
+//   city: "dhaka"
+// }
 
+// person.email = "boss@gmail.com"
+// delete person.city
+// console.log(person)
+
+// for(let key in person) {
+//   console.log(`Property of key is ${key} and Value is ${person[key]}`)
+// }
+
+//? 2.
+
+// const obj = {
+//   firstName: "Injamul",
+//   middleName: "Hoque",
+//   lastName: "Tonmoy"
+// }
+// console.log(obj)
+
+// const convertToFullName = (obj)=> {
+//   const {firstName, middleName, lastName} = obj
+//   const fullName = firstName + " "+ middleName + " " + lastName
+//   return fullName
+// }
+
+// console.log(convertToFullName(obj))
+
+
+//? 3.
+
+// const obj = {
+//   name: "boss",
+//   age: 32,
+//   city: "dhaka",
+//   isMarried: false
+// }
+// console.log(obj)
+
+// const numOfProperty = (obj) => {
+//   const numProp = Object.keys(obj)
+//   return numProp.length
+// }
+
+// console.log(numOfProperty(obj))
+
+
+//? 4.
+
+// const users = [
+//   {name: "Alice", role: "admin"},
+//   {name: "Bob", role: "user"},
+//   {name: "Charlie", role: "admin"},
+//   {name: "bill", role: "admin"}
+// ]
+// console.log(users)
+
+// const roleAdmin = (arr) => {
+//   // const arrOfNames = []
+//   // for(let elem of arr) {
+//   //   if(elem.role === "admin") {
+//   //     arrOfNames.push(elem.name)
+//   //   }
+//   // }
+//   // return arrOfNames
+
+//   const filterArrOfNames = arr.filter(item => item.role === "admin")
+//   const finalArr = filterArrOfNames.map(item => item.name)
+//   return finalArr
+// }
+
+// console.log(roleAdmin(users))
