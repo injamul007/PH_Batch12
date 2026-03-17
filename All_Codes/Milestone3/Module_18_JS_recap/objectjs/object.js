@@ -151,3 +151,68 @@
 // }
 
 // console.log(roleAdmin(users))
+
+
+//? 5.
+
+// const products = [
+//   {id:1, name: "iPhone16"},
+//   {id:2, name: "iPhone16"},
+//   {id:3, name: "Samsung Galaxy S24"},
+//   {id:4, name: "Google Pixel"},
+//   {id:5, name: "LG Monitor 22inch"},
+//   {id:6, name: "PS5 Gamepad"}
+// ]
+
+// const keyword = prompt("Enter your keyword for search products")
+
+// const searchProducts = (products, keyword) => {
+//   const filteredProduct = products.filter(item => item.name.toLowerCase().includes(keyword.toLowerCase()))
+//   return filteredProduct
+// }
+
+// console.log(searchProducts(products, keyword))
+
+
+//? 6.
+
+// const comments = [
+//   {postId: 1, comment: "Great Post!"},
+//   {postId: 2, comment: "Thanks!"},
+//   {postId: 1, comment: "Very Helpful"}
+// ]
+
+// const groupByComments = (comments) => {
+//   // const groupBy = Object.groupBy(obj, item => item.postId)
+//   const groupedComments = {}
+//   comments.forEach(obj => {
+//     if(groupedComments.hasOwnProperty(obj.postId)) {
+//       groupedComments[obj.postId].push(obj.comment)
+//     } else {
+//       groupedComments[obj.postId] = [obj.comment]
+//     }
+//   })
+//   console.log(groupedComments)
+// }
+
+// console.log(groupByComments(comments))
+
+
+//? 7.
+
+// const params = {
+//   search: "alpha",
+//   page: 2,
+//   sort: "asc",
+//   limit: 12
+// }
+
+// const createUrl = (params)=> {
+//   let url = ""
+//   for(let key in params) {
+//     url += `${key}=${params[key]}&`
+//   }
+//   console.log(url.slice(0, url.length-1))
+// }
+
+// console.log(createUrl(params))
