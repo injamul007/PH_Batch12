@@ -31,3 +31,47 @@
 // console.log(h3.innerHTML)
 
 
+// const pTag = document.querySelector('p')
+// console.log(pTag.innerText = 'my name is \nking khan')
+// console.log(pTag.innerHTML = '<span>My name is bulla</span>')
+
+
+// const h1 = document.querySelector("h1")
+
+// h1.style.backgroundColor = 'green'
+
+
+// const h1 = document.querySelector("h1")
+
+// h1.addEventListener('click', ()=>{
+//   h1.style.backgroundColor = "blue"
+//   h1.style.color = 'black'
+// })
+
+
+const btn = document.querySelector('button')
+const box = document.querySelector("p")
+
+btn.addEventListener("click", () => {
+  if(btn.innerText === 'Expand') {
+    btn.innerText = "Shrink"
+    box.style.backgroundColor = 'green'
+    box.style.scale = '1'
+  } else {
+    btn.innerText = "Expand"
+    box.style.backgroundColor = 'red'
+    box.style.scale = '0.8'
+  }
+})
+
+
+// btns.forEach(btn => {
+//   btn.addEventListener('click', () => {
+//     if(btn.innerText === "ON") {
+//       box.style.backgroundColor = 'blue'
+//       box.style.transform = 'rotate'
+//     } else {
+//       box.style.backgroundColor = 'brown'
+//     }
+//   })
+// })
