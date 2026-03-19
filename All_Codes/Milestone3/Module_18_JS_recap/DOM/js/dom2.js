@@ -105,35 +105,35 @@
 
 //? challenge-1
 
-const div = document.querySelector(".old");
+// const div = document.querySelector(".old");
 
-function changeTagName(oldNode, newTagName) {
-  let newElement = document.createElement(newTagName);
-  if (oldNode instanceof Element) {
-    newElement.innerText = oldNode.innerText;
-    for (const attr of oldNode.attributes) {
-      // console.log(attr)
-      newElement.setAttribute(attr.name, attr.value);
-      oldNode.replaceWith(newElement);
-    }
-  } else {
-    console.error("invalid node");
-  }
-  return newElement;
-}
+// function changeTagName(oldNode, newTagName) {
+//   let newElement = document.createElement(newTagName);
+//   if (oldNode instanceof Element) {
+//     newElement.innerText = oldNode.innerText;
+//     for (const attr of oldNode.attributes) {
+//       // console.log(attr)
+//       newElement.setAttribute(attr.name, attr.value);
+//       oldNode.replaceWith(newElement);
+//     }
+//   } else {
+//     console.error("invalid node");
+//   }
+//   return newElement;
+// }
 
 // changeTagName(div, 'p')
-const catchReturn = changeTagName(div, "p");
+// const catchReturn = changeTagName(div, "p");
 // console.log(catchReturn, 'hello')
 // console.log(changeTagName(div, 'p'));
 
-const h1 = document.createElement("h1");
-h1.innerText = "This is H1";
+// const h1 = document.createElement("h1");
+// h1.innerText = "This is H1";
 // h1.style.cssText = 'background-color: yellow; font-size: 30px; text-align: center'
 // h1.setAttribute('style', 'background-color: red; font-size: 60px')
-h1.classList.add("bg_aqua_h1");
-h1.classList.add("font_size");
-h1.classList.add("text_center");
+// h1.classList.add("bg_aqua_h1");
+// h1.classList.add("font_size");
+// h1.classList.add("text_center");
 // h1.classList.remove('bg_aqua_h1')
 
 // document.body.append(h1)
@@ -145,11 +145,11 @@ h1.classList.add("text_center");
 // })
 
 
-const btn = document.querySelector('button');
+// const btn = document.querySelector('button');
 
-let btnEvenFunction = function() {
-  console.log('click the btn')
-}
+// let btnEvenFunction = function() {
+//   console.log('click the btn')
+// }
 
 // btn.addEventListener('click', btnEvenFunction);
 
@@ -157,46 +157,49 @@ let btnEvenFunction = function() {
 
 //? Problem-1
 
-const incrementBtn = document.querySelector('.incre_btn')
-const decrementBtn = document.querySelector('.decre_btn')
-const counterValue = document.querySelector('.counter_value')
+// const incrementBtn = document.querySelector('.incre_btn')
+// const decrementBtn = document.querySelector('.decre_btn')
+// const counterValue = document.querySelector('.counter_value')
 
-function counterValueChange() {
-  // let count = 1;
-  let value;
-  incrementBtn.addEventListener('click', function() {
-    value = Number(counterValue.innerText);
-    counterValue.innerText = value + 1;
-  })
-  decrementBtn.addEventListener('click', function() {
-    value = Number(counterValue.innerText);
-    if(value <= 0) {
-      // counterValue.innerText = 0;
-      return;
-    }
-    counterValue.innerText = value - 1;
-  })
-}
+// function counterValueChange() {
+//   // let count = 1;
+//   let value;
+//   incrementBtn.addEventListener('click', function() {
+//     value = Number(counterValue.innerText);
+//     counterValue.innerText = value + 1;
+//   })
+//   decrementBtn.addEventListener('click', function() {
+//     value = Number(counterValue.innerText);
+//     if(value <= 0) {
+//       // counterValue.innerText = 0;
+//       return;
+//     }
+//     counterValue.innerText = value - 1;
+//   })
+// }
 
-counterValueChange()
+// counterValueChange()
 
 
 //? Problem-2
 
-let form = document.querySelector('form');
-let inputName = document.querySelector('#name');
-let inputEmail = document.querySelector('#email');
-let submitBtn = document.querySelector('.sub_btn');
+// let form = document.querySelector('form');
+// let inputName = document.querySelector('#name');
+// let inputEmail = document.querySelector('#email');
+// let submitBtn = document.querySelector('.sub_btn');
 
-let pElement = document.createElement('p');
+// let pElement = document.createElement('p');
 
-form.addEventListener('submit', function(e) {
-  e.preventDefault();
-  if (!(inputName.value) || !(inputEmail.value)) {
-    console.log('please fill all the details first');
-    return;
-  } else {
-    pElement.innerText +=  `Name: ${inputName.value}\n\n Email: ${inputEmail.value} \n \n`;
-    form.append(pElement);
-  }
-})
+// form.addEventListener('submit', function(e) {
+//   e.preventDefault();
+//   if (!(inputName.value) || !(inputEmail.value)) {
+//     console.log('please fill all the details first');
+//     return;
+//   } else {
+//     pElement.innerText +=  `Name: ${inputName.value}\n\n Email: ${inputEmail.value} \n \n`;
+//     form.append(pElement);
+//   }
+// })
+
+
+
