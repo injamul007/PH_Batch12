@@ -203,3 +203,7 @@
 
 
 
+// console.log(document)
+
+const node = document.querySelectorAll('div')
+console.log(node)
