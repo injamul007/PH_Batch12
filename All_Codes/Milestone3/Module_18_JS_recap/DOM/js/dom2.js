@@ -205,5 +205,19 @@
 
 // console.log(document)
 
-const node = document.querySelectorAll('div')
-console.log(node)
+// const nodeList = document.querySelectorAll('div')
+// const htmlCollection = document.getElementsByTagName('div')
+// console.log(nodeList, htmlCollection)
+// const bigHeadingById = document.getElementById('bigHeading')
+// const bigHeadingByQs = document.querySelector('#bigHeading')
+// console.log(bigHeadingById, bigHeadingByQs)
+
+// console.log(document.getElementsByClassName('sameDiv'))
+// console.log(document.querySelectorAll('.sameDiv'))
+
+// console.log(document.querySelector('#firstDiv').firstChild.textContent= 'this is me boss')
+// console.log(document.querySelector('#firstDiv').childNodes)
+
+
+const h1 = document.querySelector('h1')
+console.log(h1.tagName)
