@@ -219,6 +219,16 @@
 // console.log(document.querySelector('#firstDiv').childNodes)
 
 
-const h1 = document.querySelector('h1')
-console.log(h1.tagName)
-console.log(h1.nodeName)
+// const h1 = document.querySelector('h1')
+// console.log(h1.tagName)
+// console.log(h1.nodeName)
+// console.log(h1.firstChild.nodeName)
+// console.log(h1.innerHTML)
+// console.log(h1.innerText)
+// console.log(h1.textContent)
+// console.log(h1.firstChild)
+
+// h1.innerText = '     everybody \n loves          me       '
+
+// console.log(h1.innerText)
+// console.log(h1.textContent)
