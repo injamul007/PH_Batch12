@@ -280,3 +280,72 @@
 
 
 
+//? QN. 1
+
+// const paragraph = document.createElement('p')
+// paragraph.innerText = 'main tumse pyar nahi karta hun'
+// paragraph.style.backgroundColor = 'black'
+// paragraph.style.color = 'green'
+
+// document.body.append(paragraph)
+
+// paragraph.setAttribute('style', 'background-color: black; color: green; padding: 20px; font-size: 24px')
+
+// console.log(paragraph.getAttribute('style'))
+
+
+//? QN. 2
+
+// const btn = document.createElement('button')
+// btn.innerText = 'Click Me'
+// paragraph.prepend(btn)
+// console.log(paragraph.childNodes)
+
+
+//? //? QN. 3
+
+// const selectedDiv = document.querySelector('.newDiv')
+
+// const previousClassOfDiv = selectedDiv.getAttribute('class')
+
+// selectedDiv.setAttribute('class', `${previousClassOfDiv} anotherDivCls`)
+
+// console.log(selectedDiv.getAttribute('class'))
+
+
+
+//? Challenge 1:
+
+// const selectedDiv = document.querySelector('.newDiv')
+// const newP = document.createElement('p')
+// console.log(newP)
+
+// console.log(selectedDiv.attributes)
+
+// for(let att of selectedDiv.attributes) {
+//   console.log(att.name, "...", att.value)
+//   newP.setAttribute(att.name, att.value)
+// }
+
+// console.log(newP.attributes)
+
+
+function changeTagName(oldNode, newTagName) {
+  if(!oldNode || !(oldNode instanceof Element)) {
+    console.error("Invalid Node Provided")
+    return null;
+  }
+  
+  const newNodePara = document.createElement(newTagName)
+  
+  for(let attr of oldNode.attributes) {
+    newNodePara.setAttribute(attr.name, attr.value)
+  }
+  
+  newNodePara.append(...oldNode.childNodes)
+  oldNode.replaceWith(newNodePara)
+  return newNodePara
+}
+
+const div = document.querySelector('.divClass')
+console.log(changeTagName(div, "p"))
