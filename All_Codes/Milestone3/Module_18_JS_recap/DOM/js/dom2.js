@@ -233,14 +233,14 @@
 // console.log(h1.innerText)
 // console.log(h1.textContent)
 
-const divElem = document.querySelector('div')
-const para4 = document.createElement('p')
-divElem.append(para4)
+// const divElem = document.querySelector('div')
+// const para4 = document.createElement('p')
+// divElem.append(para4)
 // divElem.prepend(para4)
 // divElem.before(para4)
 // divElem.after(para4)
 // divElem.insertAdjacentElement('afterbegin',para4)
-para4.innerText = "new paragraph"
+// para4.innerText = "new paragraph"
 // divElem.removeChild(para4)
 // divElem.remove()
 
@@ -251,29 +251,32 @@ para4.innerText = "new paragraph"
 // console.log(para4.parentNode.removeChild(divElem.children[0]))
 // console.log(para4.parentNode.prepend('hello'))
 
-const para2 = document.querySelector("#para2")
+// const para2 = document.querySelector("#para2")
 // const parentNode = para2.parentNode
 // console.log(parentNode)
 // console.log(para2.parentNode.prepend("im from para 2"))
 
 
-const newElem = document.createElement('h4')
+// const newElem = document.createElement('h4')
 
-newElem.innerText = 'New Element'
-divElem.append(newElem)
+// newElem.innerText = 'New Element'
+// divElem.append(newElem)
 // divElem.removeChild(newElem)
-divElem.insertBefore(newElem, para4)
+// divElem.insertBefore(newElem, para4)
 
 // console.log(divElem.replaceChildren(para2, newElem))
 // console.log(divElem.replaceChild(newElem, para2))
 
-const btn = document.getElementById('btn')
+// const btn = document.getElementById('btn')
 // console.log(btn.getAttribute('style'))
 // const afterAtt = btn.setAttribute('style', "background-color: yellow;")
 // console.log(btn.getAttribute('style'))
 // console.log(btn.attributes.style.nodeValue)
 // console.log(btn.attributes)
-const className = btn.getAttribute('class')
-console.log(className)
-const setAnotherClass = btn.setAttribute('class', `${className} btn2 btn3`)
-console.log(btn.attributes.class.nodeValue)
+// const className = btn.getAttribute('class')
+// console.log(className)
+// const setAnotherClass = btn.setAttribute('class', `${className} btn2 btn3`)
+// console.log(btn.attributes.class.nodeValue)
+
+
+
