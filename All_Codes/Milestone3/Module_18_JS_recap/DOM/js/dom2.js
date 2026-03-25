@@ -330,22 +330,86 @@
 // console.log(newP.attributes)
 
 
-function changeTagName(oldNode, newTagName) {
-  if(!oldNode || !(oldNode instanceof Element)) {
-    console.error("Invalid Node Provided")
-    return null;
-  }
+// function changeTagName(oldNode, newTagName) {
+//   if(!oldNode || !(oldNode instanceof Element)) {
+//     console.error("Invalid Node Provided")
+//     return null;
+//   }
   
-  const newNodePara = document.createElement(newTagName)
+//   const newNodePara = document.createElement(newTagName)
   
-  for(let attr of oldNode.attributes) {
-    newNodePara.setAttribute(attr.name, attr.value)
-  }
+//   for(let attr of oldNode.attributes) {
+//     newNodePara.setAttribute(attr.name, attr.value)
+//   }
   
-  newNodePara.append(...oldNode.childNodes)
-  oldNode.replaceWith(newNodePara)
-  return newNodePara
-}
+//   newNodePara.append(...oldNode.childNodes)
+//   oldNode.replaceWith(newNodePara)
+//   return newNodePara
+// }
 
-const div = document.querySelector('.divClass')
-console.log(changeTagName(div, "p"))
+// const div = document.querySelector('.divClass')
+// console.log(changeTagName(div, "p"))
+
+
+//? Manipulating the Css with JS
+
+// const div = document.querySelector('div')
+// div.className = `${div.className} newDiv anotherDivCls`
+// console.log(div.className)
+
+// div.classList.add('newDiv')
+// div.classList.add('anotherDivCls')
+// div.classList.remove('anotherDivCls')
+// const isAvailable = div.classList.contains('newDiv')
+// console.log(isAvailable)
+// div.classList.toggle('newDiv')
+// div.classList.toggle('newDiv')
+// console.log(div.className)
+
+
+//? PQ 1
+
+// const btns = document.querySelectorAll('button')
+
+// btns.forEach(btn => {
+//   btn.addEventListener("click", () => {
+//     if(btn.innerText === 'LightMode') {
+//       document.body.style.backgroundColor = 'white'
+//     } else {
+//       document.body.style.backgroundColor = 'black'
+//     }
+//   })
+// })
+
+
+//? PQ 2
+
+// const btns = document.querySelectorAll('button')
+
+// btns.forEach(btn => {
+//   btn.addEventListener("click", () => {
+//     if(btn.innerText === 'LightMode') {
+//       document.body.classList.add('lightMode')
+//       document.body.classList.remove('darkMode')
+//     } else {
+//       document.body.classList.add('darkMode')
+//       document.body.classList.remove('lightMode')
+//     }
+//   })
+// })
+
+
+//? PQ 3
+
+// const lightBtn = document.querySelector('.lightBtn')
+// const darkBtn = document.querySelector('.darkBtn')
+
+
+//   lightBtn.addEventListener("click", () => {
+//     if(lightBtn.className === 'lightBtn') {
+//       // lightBtn.innerText = 'LightMode'
+//       document.body.classList.toggle('darkMode')
+//     }
+//   })
+
+
