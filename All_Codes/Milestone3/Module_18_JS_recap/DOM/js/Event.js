@@ -41,11 +41,14 @@
 // let count = displayCount.innerHTML
 
 // plusBtn.addEventListener("click", () => {
-//   displayCount.innerHTML = count++
+//   displayCount.innerHTML = Number(displayCount.innerHTML) + 1
 // })
 
 // minusBtn.addEventListener("click", () => {
-//   displayCount.innerHTML = count--
+//   if(Number(displayCount.innerHTML) <= 0) {
+//     return
+//   }
+//   displayCount.innerHTML = Number(displayCount.innerHTML) - 1
 // })
 
 
@@ -79,3 +82,19 @@
 // })
 
 
+const form = document.querySelector('.form')
+const textInput = document.querySelector('.textInput')
+const submitBtn = document.querySelector('.submitBtn')
+const body = document.querySelector('body')
+
+form.addEventListener('submit', (e)=> {
+  e.preventDefault();
+  if(!textInput.value) {
+    console.log('your input is empty')
+    return
+  }
+  const div = document.createElement('div')
+  div.innerHTML = `<p>${textInput.value}</p>`
+  body.append(div)
+  console.log(textInput.value)
+})
