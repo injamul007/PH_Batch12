@@ -1,0 +1,55 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: rgb(238, 226, 212);
+}
+
+.main_div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 60vh;
+}
+
+button {
+  padding: 12px 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  border: 0;
+  cursor: pointer;
+  background-color: rgb(36, 199, 199);
+}
+
+button:hover {
+  background-color: teal;
+}
+
+.main_heading {
+  font-size: 36px;
+}
+
+.second_heading {
+  font-size: 28px;
+}
+
+.common_in_heading {
+  background-color: white;
+  padding: 12px 20px;
+  border-radius: 10px;
+}
+
+.btn_contain_div {
+  margin-block: 20px;
+}
+
+.color_input_field {
+  margin-inline: 20px;
+  font-size: 20px;
+  padding: 12px 20px;
+  border-radius: 8px;
+}
