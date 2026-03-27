@@ -6,6 +6,7 @@
 
 html, body {
   background-color: rgb(238, 226, 212);
+  height: 100vh;
 }
 
 .main_div {
@@ -13,7 +14,7 @@ html, body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 60vh;
 }
 
 button {
