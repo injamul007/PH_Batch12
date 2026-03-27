@@ -5,13 +5,23 @@ const randomClrBtn = document.querySelector(".random_clr_btn");
 const colorValueField = document.querySelector(".color_value_field");
 
 
+const colorArray = ['red', 'blue', 'green','lightgreen', 'yellow', 'gold', 'tomato', 'teal', 'cyan', 'lightcoral', 'aqua', 'white', 'black', 'skyblue', 'lightblue', 'brown', 'darkred' ,'chocolate', 'pink', 'magenta']
 
-applyClrBtn.addEventListener("click", () => {
-  body.style.backgroundColor = colorInputField.value;
-  colorValueField.innerText = colorInputField.value;
-});
+const colorChanger = (color) => {
+  body.style.backgroundColor = color;
+  colorValueField.innerText = color;
+}
 
 
-randomClrBtn.addEventListener('click', ()=> {
-  
-})
+const handleApplyClrBtnClick = () => {
+  colorChanger(colorInputField.value)
+}
+
+const handleRandomClrBtnClick = () => {
+  const randomNumberArray = Math.floor(Math.random() * colorArray.length-1) + 1
+  colorChanger(colorArray[randomNumberArray])
+}
+
+applyClrBtn.addEventListener("click", handleApplyClrBtnClick);
+
+randomClrBtn.addEventListener('click', handleRandomClrBtnClick)

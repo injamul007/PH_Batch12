@@ -30,6 +30,10 @@ button:hover {
   background-color: teal;
 }
 
+button:active {
+  transform: scale(1.05);
+}
+
 .main_heading {
   font-size: 36px;
 }
