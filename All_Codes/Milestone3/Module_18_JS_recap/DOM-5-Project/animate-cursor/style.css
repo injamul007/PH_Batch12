@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+
+.smallCursor {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: tomato;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: translate(-50%, -50%);
+}
+
+.shadowCursor {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background-color: tomato;
+  filter: blur(20px);
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  transform: translate(-50%, -50%);
+}
