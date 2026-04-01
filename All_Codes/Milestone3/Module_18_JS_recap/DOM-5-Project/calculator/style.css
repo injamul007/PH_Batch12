@@ -1,0 +1,94 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background-color: #f7eeee;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  background-color: #222222;
+  width: 100%;
+  max-width: 20rem;
+  /* height: 60vh; */
+  margin: 0 auto;
+  padding: 18px;
+  border-radius: 10px;
+}
+
+.display {
+  width: 100%;
+  height: 4rem;
+  background-color: #111111;
+  margin-bottom: 20px;
+  border-radius: 8px;
+  color: #6cdf55;
+  font-size: 30px;
+  font-family: monospace;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 0 10px;
+}
+
+.buttonsContainer {
+  user-select: none;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.buttonsContainer button {
+  width: 100%;
+  padding: 14px 0;
+  border-radius: 10px;
+  background-color: #333333;
+  border: 0;
+  color: white;
+  font-size: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.418);
+}
+
+.buttonsContainer button:active {
+  transform: scale(1.03);
+}
+
+.buttonsContainer button:hover {
+  background-color: #474646;
+}
+
+.buttonsContainer .clearBtn {
+  background-color: tomato;
+  grid-column: span 3;
+}
+
+.buttonsContainer .clearBtn:hover {
+  background-color: rgb(223, 82, 58);
+  grid-column: span 3;
+}
+
+.buttonsContainer .equalBtn {
+  background-color: #48abd3;
+  grid-column: span 2;
+}
+
+.buttonsContainer .equalBtn:hover {
+  background-color: #308eb3;
+  grid-column: span 2;
+}
+
+.buttonsContainer .operatorBtns {
+  background-color: orange;
+}
+
+.buttonsContainer .operatorBtns:hover {
+  background-color: rgb(199, 134, 14);
+}
