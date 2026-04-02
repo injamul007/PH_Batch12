@@ -217,4 +217,8 @@
 
 let str = "hello i am the boss"
 
-console.log(str.split(" ").length)
+// console.log(str.split(" ").length)
+
+const input = process.argv[3];
+
+console.log(input)
