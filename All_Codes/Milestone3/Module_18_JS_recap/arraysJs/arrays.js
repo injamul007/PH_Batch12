@@ -249,3 +249,18 @@
 
 // console.log(str)
 // console.log(mapStr.join(" "))
+
+
+// const numbers = [1,2,3,4,5]
+
+// const sum = numbers.reduce((acc,curr) => acc*curr,1)
+
+// console.log(sum)
+
+// let factorial = 1
+
+// for(let i = 1; i<=5; i++) {
+//   factorial = factorial * i
+// }
+
+// console.log(factorial)
