@@ -284,3 +284,16 @@
 //   console.log(str)
 // }
 
+
+
+// const user = {
+//   name: 'boss',
+//   team: 'next level team',
+//   age: 132
+// }
+
+// for(const [key, value] of Object.entries(user)) {
+//   console.log(key, value)
+// }
+
+// console.log(Object.entries(user))
