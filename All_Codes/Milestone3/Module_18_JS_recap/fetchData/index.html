@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Raw Data Fetching by JS</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-100 p-8">
+  <h1 class="text-2xl font-bold mb-4">Todo List</h1>
+  <div class="space-x-2 mb-4">
+    <button onclick="getTodosThen()" class="bg-blue-500 text-white px-4 py-2 rounded">
+      load todos (.then)
+    </button>
+    <button onclick="getTodosAsync()" class="bg-green-500 text-white px-4 py-2 rounded">
+      load todos (async/await)
+    </button>
+    <button onclick="createTodo()" class="bg-purple-500 text-white px-4 py-2 rounded">
+      create post
+    </button>
+    <button onclick="updateTodo()" class="bg-yellow-500 text-white px-4 py-2 rounded">
+      update post
+    </button>
+    <button onclick="deleteTodo()" class="bg-red-500 text-white px-4 py-2 rounded">
+      delete post
+    </button>
+  </div>
+
+  <div id="todos" class="space-y-3"></div>
+
+<script src="./fetch.js"></script>
+</body>
+</html>
