@@ -7,10 +7,10 @@
 html, body {
   width: 100%;
   height: 100%;
-  color: white;
+  /* color: white; */
 }
 
-.grand-parent {
+/* .grand-parent {
   padding: 100px;
   background-color: black;
 }
@@ -25,4 +25,29 @@ html, body {
   padding: 50px;
   margin-top: 50px;
   background-color: skyblue;
+} */
+
+
+.container {
+  background-color: lightseagreen;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  padding: 150px;
+}
+
+.box {
+  background-color: brown;
+  color: white;
+  font-size: 60px;
+  padding: 10px;
+  border-radius: 100%;
+  height: 120px;
+  width: 120px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
 }
