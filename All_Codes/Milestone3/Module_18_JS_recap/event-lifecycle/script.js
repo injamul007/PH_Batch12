@@ -1,14 +1,13 @@
-const grandParent = document.querySelector('.grand-parent')
-const parent = document.querySelector('.parent')
-const child = document.querySelector('.child')
-
-
-// grandParent.addEventListener('click', ()=>{
-//   console.log('grand parent click is working fine')
-// })
+const grandParent = document.querySelector(".grand-parent");
+const parent = document.querySelector(".parent");
+const child = document.querySelector(".child");
 
 // grandParent.addEventListener('click', ()=>{
 //   console.log('grand parent click is working fine')
+// })
+
+// grandParent.addEventListener('click', ()=>{
+//   console.log('grand parent click is working fine')
 // }, true)
 
 // parent.addEventListener('click', ()=>{
@@ -27,23 +26,28 @@ const child = document.querySelector('.child')
 //   console.log('child click is working fine')
 // }, true)
 
+// grandParent.addEventListener("click", (e) => {
+//   // e.stopPropagation()
+//   console.log(e.target);
+//   console.log("grand parent");
+//   console.log(e.currentTarget);
+// });
 
-grandParent.addEventListener('click', ()=>{
-  console.log('grand parent click is working fine')
-}, false)
+// parent.addEventListener("click", (e) => {
+//   // parent.style.backgroundColor = 'red'
+//   // e.stopPropagation()
+//   console.log(e.target);
+//   console.log(e.currentTarget);
+//   console.log("parent");
+// });
 
-// parent.addEventListener('click', ()=>{
-//   console.log('parent click is working fine')
-// })
+// child.addEventListener("click", (e) => {
+//   // e.stopPropagation()
+//   console.log(e.target);
+//   console.log(e.currentTarget);
+//   // e.stopImmediatePropagation()
+//   console.log("child");
+// });
 
-parent.addEventListener('click', ()=>{
-  console.log('parent click is working fine')
-}, true)
 
-// child.addEventListener('click', ()=>{
-//   console.log('child click is working fine')
-// }, true)
 
-child.addEventListener('click', ()=>{
-  console.log('child click is working fine')
-}, true)
