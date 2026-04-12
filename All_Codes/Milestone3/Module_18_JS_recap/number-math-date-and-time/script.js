@@ -85,3 +85,21 @@
 
 //? Math.max
 // console.log(Math.max(2,3,44,22,99))
+
+
+//? Math.random 
+
+// function randomNumber(min, max) {
+//   return Math.floor(Math.random() * (max - min + 1) + min)
+// }
+
+// console.log(randomNumber(7,14))
+
+
+
+//? Date in Javascript
+
+// const date = new Date()
+
+// console.log(date)
+// console.log(Date.now()/1000/60/60/24/365)
