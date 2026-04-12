@@ -103,3 +103,23 @@
 
 // console.log(date)
 // console.log(Date.now()/1000/60/60/24/365)
+
+
+// const date = new Date()
+
+// console.log(date.toString())
+// console.log(date.toISOString())
+// console.log(date.toLocaleString())
+// console.log(date.toUTCString())
+// console.log(date.getTime())
+// console.log(Date.now())
+
+
+
+const timeStamp = Date.now()
+const pd = new Date(timeStamp)
+console.log(pd)
+
+const twoHrsAdd = timeStamp + 1000*60*60*2
+const cd = new Date(twoHrsAdd)
+console.log(cd)
