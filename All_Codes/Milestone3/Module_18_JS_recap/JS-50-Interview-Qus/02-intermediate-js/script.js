@@ -41,8 +41,8 @@
 
 //? Ques no 20. what is the difference between slice and splice?
 
-const string = 'i am boss'
-const arr = ['i','a','m','b','o','s','s']
+// const string = 'i am boss'
+// const arr = ['i','a','m','b','o','s','s']
 
 // const newStr = string.slice(5)
 // const newArr = arr.slice(5)
@@ -50,5 +50,41 @@ const arr = ['i','a','m','b','o','s','s']
 // console.log(newStr)
 // console.log(newArr)
 
-console.log(arr.splice(3,1,'t'))
-console.log(arr)
+// console.log(arr.splice(3,1,'t'))
+// console.log(arr)
+
+
+//? Ques no 21. Create a function that reverse each word of a given sentences .E.G: i am boss -> ssob ma i
+
+// const reverseWords = (str) => {
+//   return str.split('').reverse().join('')
+// }
+
+// console.log(reverseWords('mai hun boss'))
+
+
+//? Ques no 22. in an array of numbers and strings, only add those numbers which are not strings.
+
+// const arr = [1,'55',3,'boss',7,1,8,false,true]
+
+// const onlyAddNumbersFromArr = (localArr) => {
+//   let sum = 0;
+
+//   localArr.forEach(item => {
+//     if(typeof item === "number") {
+//       sum += item
+//     }
+//   })
+
+//   return sum
+// }
+
+// console.log(onlyAddNumbersFromArr(arr))
+
+
+//? Ques no 23. How would you check if a number is an integer?
+
+// const num = 123.123
+
+// console.log(Number.isInteger(num))
+// console.log(num % 1 === 0)
