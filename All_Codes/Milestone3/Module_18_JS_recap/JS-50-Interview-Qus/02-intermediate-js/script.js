@@ -148,3 +148,22 @@
 
 //? Ques no 28. write a js function to get the number of occurrences of each letter in specified string
 
+const string = 'i love programming'
+
+const getOccurrenceOfEachWord = (str) => {
+  let obj = {}
+  str.replaceAll(' ',"").split('').forEach(letter => {
+    if(obj.hasOwnProperty(letter)) {
+      obj[letter] ++
+    } else {
+      obj[letter] = 1
+    }
+  })
+  
+  // return Object.entries(obj).map(entryArr => {
+  //   return `${entryArr[0]} is appears ${entryArr[1]} times`
+  // })
+  return obj
+}
+
+console.log(getOccurrenceOfEachWord(string))
