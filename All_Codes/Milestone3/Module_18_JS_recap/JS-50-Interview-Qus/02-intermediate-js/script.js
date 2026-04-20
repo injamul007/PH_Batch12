@@ -2,7 +2,7 @@
 
 
 
-//? Intermediate js qus from 16 - 25
+//? Intermediate js qus from 16 - 30
 
 // ? Ques no 16. what's the difference between parseInt and Number()?
 
@@ -88,3 +88,63 @@
 
 // console.log(Number.isInteger(num))
 // console.log(num % 1 === 0)
+
+
+
+//? Ques no 24. write a js function that reverse a number
+
+// const num = 12345
+
+// const reverseNumber = (localNum) => {
+//   console.log(localNum)
+//   const str = localNum.toString()
+//   const reverseStr = str.split('').reverse().join('')
+//   return Number(reverseStr)
+// }
+
+// console.log(reverseNumber(num))
+
+
+//? Ques no 25. write a function that returns a passed string with letters in alphabetical order.
+
+// const letter = 'i love programming'
+
+// const sortAlphabeticalOrder = (ltr) => {
+//   return ltr.replaceAll(' ', "").split("").sort().join('')
+// }
+
+// console.log(sortAlphabeticalOrder(letter))
+
+
+//? Ques no 26. write a function that accepts a string as a parameter and converts the first letter of each word of the string in upper case
+
+// const string = 'hey i am the boss'
+
+// const capitalizeFirstLetter = (str) => {
+//   return str.split(' ').map(word => {
+//     return word[0].toUpperCase() + word.slice(1)
+//   }).join(' ')
+// }
+
+// console.log(capitalizeFirstLetter(string))
+
+
+//? Ques no 27. write a js function to get the first element of an array. Passing a parameter "n" will return the first "n" elements of the array
+
+// const arr = ['apple','mango','lichi','banana']
+
+// const getFirstElementOfArr = (localArr, n) => {
+//   if(!n) {
+//     return localArr[0]
+//   }else if(n > localArr.length-1) {
+//     return "invalid arr with length"
+//   } else {
+//     return localArr.slice(0, n)
+//   }
+// }
+
+// console.log(getFirstElementOfArr(arr, 3))
+
+
+//? Ques no 28. write a js function to get the number of occurrences of each letter in specified string
+
