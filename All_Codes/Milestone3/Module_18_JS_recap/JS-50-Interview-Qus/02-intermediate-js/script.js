@@ -148,22 +148,85 @@
 
 //? Ques no 28. write a js function to get the number of occurrences of each letter in specified string
 
-const string = 'i love programming'
+// const string = 'i love programming'
 
-const getOccurrenceOfEachWord = (str) => {
-  let obj = {}
-  str.replaceAll(' ',"").split('').forEach(letter => {
-    if(obj.hasOwnProperty(letter)) {
-      obj[letter] ++
-    } else {
-      obj[letter] = 1
-    }
-  })
+// const getOccurrenceOfEachWord = (str) => {
+//   let obj = {}
+//   str.replaceAll(' ',"").split('').forEach(letter => {
+//     if(obj.hasOwnProperty(letter)) {
+//       obj[letter] ++
+//     } else {
+//       obj[letter] = 1
+//     }
+//   })
   
   // return Object.entries(obj).map(entryArr => {
   //   return `${entryArr[0]} is appears ${entryArr[1]} times`
   // })
-  return obj
+//   return obj
+// }
+
+// console.log(getOccurrenceOfEachWord(string))
+
+
+//? Ques no 29. write a js program to find the most frequent item of an array
+
+// const arr = [3,2,5,6,4,3,6,3,4,5,6]
+
+// const getMostFrequentItem = (localArr) => {
+//   let freqObj = {}
+//   localArr.forEach(item => {
+//       if(freqObj.hasOwnProperty(item)) {
+//         freqObj[item]++
+//       } else {
+//         freqObj[item] = 1
+//       }
+//   })
+//   const mostFreqArr = Object.values(freqObj).map(valueArr => {
+//     return valueArr
+//   })
+//   const maxFreq = Math.max(...mostFreqArr)
+//   const filteredArr = Object.entries(freqObj).filter(entryArr => {
+//     return entryArr[1] === maxFreq
+//   })
+//   return filteredArr.map(itemArr => {
+//     return `${itemArr[0]} is appears ${itemArr[1]} times`
+//   })
+// }
+
+// console.log(getMostFrequentItem(arr))
+
+
+//? Ques no 30. write a js program to shuffle an array
+
+// const arr = [1,2,3,4,5]
+
+const getShuffleArr = (localArr) => {
+  // for(let index in localArr) {
+  //   let randomArrIndex = Math.floor(Math.random() * localArr.length) + 1
+  //   let temp = localArr[index]
+  //   localArr[index] = localArr[randomArrIndex]
+  //   localArr[randomArrIndex] = temp
+  // }
+
+  // const shuffleArr = localArr.map((_,index) => {
+  //   let randomArrIndex = Math.floor(Math.random() * localArr.length)
+  //   let temp = localArr[index]
+  //   localArr[index] = localArr[randomArrIndex]
+  //   localArr[randomArrIndex] = temp
+  // });
+  // return shuffleArr
 }
 
-console.log(getOccurrenceOfEachWord(string))
+  // arr.map((_,index) => {
+  //   let randomArrIndex = Math.floor(Math.random() * arr.length)
+  //   // let temp = arr[index]
+  //   // arr[index] = arr[randomArrIndex]
+  //   // arr[randomArrIndex] = temp
+
+  //   return [arr[randomArrIndex], arr[index]] = [arr[index], arr[randomArrIndex]]
+  // });
+
+  // console.log(arr)
+
+// console.log(getShuffleArr(arr))
