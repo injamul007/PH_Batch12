@@ -201,32 +201,15 @@
 
 // const arr = [1,2,3,4,5]
 
-const getShuffleArr = (localArr) => {
-  // for(let index in localArr) {
-  //   let randomArrIndex = Math.floor(Math.random() * localArr.length) + 1
-  //   let temp = localArr[index]
-  //   localArr[index] = localArr[randomArrIndex]
-  //   localArr[randomArrIndex] = temp
-  // }
+// const getShuffleArr = (localArr) => {
+//   const newArr = [...localArr]
+  
+//   for(let index = newArr.length-1; index > 0; index--) {
+//     const randomIndex = Math.floor(Math.random() * (index + 1));
+//     [newArr[index], newArr[randomIndex]] = [newArr[randomIndex], newArr[index]]
+//   }
 
-  // const shuffleArr = localArr.map((_,index) => {
-  //   let randomArrIndex = Math.floor(Math.random() * localArr.length)
-  //   let temp = localArr[index]
-  //   localArr[index] = localArr[randomArrIndex]
-  //   localArr[randomArrIndex] = temp
-  // });
-  // return shuffleArr
-}
-
-  // arr.map((_,index) => {
-  //   let randomArrIndex = Math.floor(Math.random() * arr.length)
-  //   // let temp = arr[index]
-  //   // arr[index] = arr[randomArrIndex]
-  //   // arr[randomArrIndex] = temp
-
-  //   return [arr[randomArrIndex], arr[index]] = [arr[index], arr[randomArrIndex]]
-  // });
-
-  // console.log(arr)
+//   return newArr
+// }
 
 // console.log(getShuffleArr(arr))
