@@ -29,14 +29,34 @@
 
 //? Immutability
 
-const obj = {name: 'boss',age:32}
+// const obj = {name: 'boss',age:32}
 
-function replaceName(name){
-  const newObj = {...obj, name} // copy the original object
-  // newObj.name = name
-  console.log(newObj)
-  // obj.name = name;
+// function replaceName(name){
+//   const newObj = {...obj, name} // copy the original object
+//   // newObj.name = name
+//   // obj.name = name;
+//   return newObj
+// }
+
+// console.log(obj)
+// console.log(replaceName('toss'))
+
+
+const list = ['red','black','yellow']
+
+function addItem(item) {
+  const newList = [...list]
+  newList.push(item)
+  return newList
 }
 
-console.log(obj)
-replaceName('toss')
+console.log(list)
+// addItem('green')
+// addItem('blue')
+// addItem('brown')
+console.log(list)
+// console.log()
+const result = addItem('green')
+const result2 = addItem('blue')
+console.log(result)
+console.log(result2)
