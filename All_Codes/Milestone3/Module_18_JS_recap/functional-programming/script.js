@@ -42,21 +42,60 @@
 // console.log(replaceName('toss'))
 
 
-const list = ['red','black','yellow']
+// const list = ['red','black','yellow']
 
-function addItem(item) {
-  const newList = [...list]
-  newList.push(item)
-  return newList
-}
+// function addItem(item) {
+//   const newList = [...list]
+//   newList.push(item)
+//   return newList
+// }
 
-console.log(list)
-// addItem('green')
-// addItem('blue')
-// addItem('brown')
-console.log(list)
-// console.log()
-const result = addItem('green')
-const result2 = addItem('blue')
-console.log(result)
-console.log(result2)
+// console.log(list)
+// // addItem('green')
+// // addItem('blue')
+// // addItem('brown')
+// console.log(list)
+// // console.log()
+// const result = addItem('green')
+// const result2 = addItem('blue')
+// console.log(result)
+// console.log(result2)
+
+
+// const arr = ['alu', 'gobi', 'mule']
+
+// function removeLastItem(lArr) {
+//   // let newArr = [...lArr]
+//   // newArr.pop()
+//   // return newArr
+//   return lArr.slice(lArr.length-1)
+// }
+
+// console.log('original arr---',arr)
+// console.log('duplicate arr---',removeLastItem(arr))
+
+
+//? Avoid shared state ❌
+
+
+//? with shared state code
+// let total = 0
+
+// function addAmount(amount) {
+//   return total+=amount
+// }
+
+// console.log(addAmount(300))
+
+
+//? now without it ✅
+
+// function addNum(a,b) {
+//   return a+b
+// }
+
+// console.log(addNum(10,4))
+
+
+//? Avoid side effect ❌
+
