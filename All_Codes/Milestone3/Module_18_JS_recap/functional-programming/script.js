@@ -193,32 +193,32 @@
 // sendMessage(user1.email, "Email")
 // sendMessage(user1.phone, "SMS")
 
-const user1 = {
-  name: 'boss',
-  email: 'boss123@gmail.com',
-  phone: '01813826007'
-}
+// const user1 = {
+//   name: 'boss',
+//   email: 'boss123@gmail.com',
+//   phone: '01813826007'
+// }
 
-const user2 = {
-  name: 'toss',
-  email: 'toss123@gmail.com',
-  phone: '01813826007'
-}
-
-
-function sendEmail(user) {
-  console.log('Email sent to :', user.email)
-}
-
-function sendSMS(user) {
-  console.log('SMS sent to :', user.phone)
-}
-
-function sendMessage(user,notifyFN) {
-  console.log('Since you are Authorized')
-  notifyFN(user)
-}
+// const user2 = {
+//   name: 'toss',
+//   email: 'toss123@gmail.com',
+//   phone: '01813826007'
+// }
 
 
-sendMessage(user1,sendEmail)
-sendMessage(user2,sendEmail)
+// function sendEmail(user) {
+//   console.log('Email sent to :', user.email)
+// }
+
+// function sendSMS(user) {
+//   console.log('SMS sent to :', user.phone)
+// }
+
+// function sendMessage(user,notifyFN) {
+//   console.log('Since you are Authorized')
+//   notifyFN(user)
+// }
+
+
+// sendMessage(user1,sendEmail)
+// sendMessage(user2,sendEmail)
