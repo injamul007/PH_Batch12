@@ -222,3 +222,20 @@
 
 // sendMessage(user1,sendEmail)
 // sendMessage(user2,sendEmail)
+
+
+//? first class function, callback function, higher order function
+
+// const greetHello = ()=> {
+//   return 'Hello'
+// }
+
+// const greetHi = ()=> {
+//   return 'Hi'
+// }
+
+// const greetWithName = (fn,name)=> {
+//   return fn() + " " + name
+// }
+
+// console.log(greetWithName(greetHi,'boss'))
