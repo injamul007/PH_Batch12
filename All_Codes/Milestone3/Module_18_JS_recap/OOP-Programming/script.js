@@ -15,7 +15,6 @@
 // console.log(obj)
 // console.log(obj.introduceMySelf())
 
-
 //? Factory Function
 
 // function Student(name,age,passion) {
@@ -37,7 +36,6 @@
 // console.log(result1);
 // console.log(result2);
 
-
 //? Constructor Function
 
 // function Student(name,age,passion) {
@@ -53,7 +51,6 @@
 // const arr = new Array
 // console.log(typeof arr)
 // console.log(typeof Array)
-
 
 //? Class Constructor
 
@@ -75,8 +72,54 @@
 // console.log(BMW)
 // console.log(Mercedes)
 
-
 //? "this" Keyword
 
-
 //? "new" Keyword
+
+//? Prototype
+//? Constructor Function
+
+// function Student(name,age) {
+//   this.name = name
+//   this.age = age
+//   // this.greet = function(){
+//   //   return `Hello Everyone My Name is ${this.name}`
+//   // }
+//   return this
+// }
+
+// Student.prototype.greet = function(){
+//   console.log(`My name is ${this.name}, age is ${this.age}`)
+// }
+
+// console.log(Student.prototype)
+
+// const s1 = new Student('boss',32)
+// const s2 = new Student('toss',22)
+// console.log(s1)
+// console.log(s2)
+// console.log(s1.greet())
+// console.log(s2.greet())
+
+//? trying it another time
+
+function BankAccount(holdersName, balance = 0) {
+  this.holdersName = holdersName;
+  this.balance = balance;
+}
+
+BankAccount.prototype.deposit = function (balance) {
+  return (this.balance += balance);
+};
+
+BankAccount.prototype.withdraw = function (balance) {
+  return (this.balance -= balance);
+};
+
+const bossAccount = new BankAccount("boss", 1000);
+const manasAccount = new BankAccount("manas", 2000);
+const tinaAccount = new BankAccount("tina", 4000);
+console.log(bossAccount);
+console.log(manasAccount.withdraw(200));
+console.log(manasAccount);
+console.log(tinaAccount);
