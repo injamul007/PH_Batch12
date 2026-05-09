@@ -103,23 +103,24 @@
 
 //? trying it another time
 
-function BankAccount(holdersName, balance = 0) {
-  this.holdersName = holdersName;
-  this.balance = balance;
-}
+// function BankAccount(holdersName, balance = 0) {
+//   this.holdersName = holdersName;
+//   this.balance = balance;
+// }
 
-BankAccount.prototype.deposit = function (balance) {
-  return (this.balance += balance);
-};
+// BankAccount.prototype.deposit = function (balance) {
+//   return (this.balance += balance);
+// };
 
-BankAccount.prototype.withdraw = function (balance) {
-  return (this.balance -= balance);
-};
+// BankAccount.prototype.withdraw = function (balance) {
+//   return (this.balance -= balance);
+// };
 
-const bossAccount = new BankAccount("boss", 1000);
-const manasAccount = new BankAccount("manas", 2000);
-const tinaAccount = new BankAccount("tina", 4000);
-console.log(bossAccount);
-console.log(manasAccount.withdraw(200));
-console.log(manasAccount);
-console.log(tinaAccount);
+// const bossAccount = new BankAccount("boss", 1000);
+// const manasAccount = new BankAccount("manas", 2000);
+// const tinaAccount = new BankAccount("tina", 4000);
+// console.log(bossAccount)
+// console.log(bossAccount.deposit(300));
+// console.log(manasAccount.withdraw(200));
+// console.log(manasAccount);
+// console.log(tinaAccount);
