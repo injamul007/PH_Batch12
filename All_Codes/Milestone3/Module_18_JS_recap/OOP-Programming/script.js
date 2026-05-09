@@ -74,3 +74,9 @@
 // const Mercedes = new Car('Mercedes','220mph')
 // console.log(BMW)
 // console.log(Mercedes)
+
+
+//? "this" Keyword
+
+
+//? "new" Keyword
