@@ -124,3 +124,31 @@
 // console.log(manasAccount.withdraw(200));
 // console.log(manasAccount);
 // console.log(tinaAccount);
+
+
+
+//? Now the actual OOP Programming (by Class / Blueprint)
+
+class Car {
+  constructor(name,color,speed,mileage){
+    this.name = name
+    this.color = color
+    this.speed = speed
+    this.mileage = mileage
+  }
+  start(){
+    return `${this.name} is starting`
+  }
+  stop(){
+    return `${this.name} is stopping`
+  }
+}
+
+const BMW = new Car('BMW','black','180mph','30ltr')
+const Buggati = new Car('Buggati','Blue','220mph','15ltr')
+const Toyota = new Car('toyota','grey','130mph','40ltr')
+console.log(BMW)
+console.log(Buggati)
+console.log(Toyota)
+// console.log(BMW.start())
+// console.log(BMW.stop())
