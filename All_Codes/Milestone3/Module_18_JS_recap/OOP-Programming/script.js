@@ -251,3 +251,5 @@
 
 //? polymorphism
 
+//? poly means many
+//? morph mean 
