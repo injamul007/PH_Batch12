@@ -157,3 +157,97 @@
 // console.log(BMW.stop())
 
 
+//? Four Pillars of OOP:
+
+//? Abstraction
+//? encapsulation
+//? these two are using together
+
+// class Car{
+//   #fuel = 100
+
+//   #burnFuel(){
+//     this.#fuel -= 1
+//   }
+
+//   start(){
+//     this.#burnFuel()
+//     console.log('this car is starting')
+//   }
+// }
+
+// const bmw = new Car()
+
+// console.log(bmw)
+// console.log(bmw.start())
+// console.log(bmw)
+// console.log(bmw.#burnFuel())
+// console.log(bmw.#fuel)
+
+
+// class BankAccount{
+//   #balance = 100
+//   constructor(holdersName, balance=100){
+//     this.holdersName = holdersName
+//     this.#balance = balance
+//   }
+//   deposit(balance){
+//     this.#balance += balance
+//   }
+
+//   set Balance(balance){
+//     if(isNaN(balance)) {
+//       console.error('Invalid Balance')
+//       return
+//     }
+//     console.log('Balance set successfully')
+//     this.#balance = balance
+//   }
+
+//   get Balance(){
+//     return this.#balance
+//   }
+// }
+
+// const bossAccount = new BankAccount('boss',500)
+// bossAccount.balance = '3232'
+// console.log(bossAccount.#balance)
+// bossAccount.Balance = 4444
+// console.log(bossAccount.Balance)
+// console.log(bossAccount)
+
+
+//? inheritance
+
+  // class Car{
+  //   constructor(brand,color){
+  //     this.brand = brand
+  //     this.color = color
+  //   }
+  //   start(){
+  //     console.log(`${this.brand} is starting`)
+  //   }
+  //   stop(){
+  //     console.log(`${this.brand} is stopping`)
+  //   }
+  // }
+  
+  // class ElectricCar extends Car{
+  //   constructor(brand,color,battery){
+  //     super(brand,color)
+  //     this.battery = `${battery}%`
+  //   }
+  //   charging(){
+  //     console.log(`${this.brand} is charging`)
+  //   }
+  // }
+
+  // const tesla = new ElectricCar('tesla','blue',70)
+  // console.log(tesla)
+  // console.log(tesla.start())
+  // console.log(tesla.stop())
+  // console.log(tesla.charging())
+
+
+//? polymorphism
+
