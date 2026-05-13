@@ -252,4 +252,4 @@
 //? polymorphism
 
 //? poly means many
-//? morph mean 
+//? morph mean forms
