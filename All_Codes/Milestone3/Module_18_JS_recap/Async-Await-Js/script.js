@@ -22,3 +22,12 @@
 // setTimeout(() => {
 //   console.log('chicken are cooking in the stove')
 // }, 6000);
+
+
+//?   Feature -->          Synchronous        vs    Asynchronous
+//?   Execution Flow -->   Line by line       vs    Skip long task,comes back 
+//?   Blocking       -->   Yes                vs    No
+//?   Use Cases      -->   Simple tasks,      vs    API calls, DB queries,
+//?                         calculation             timers 
+
+
