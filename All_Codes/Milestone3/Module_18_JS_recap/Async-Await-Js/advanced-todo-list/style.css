@@ -13,7 +13,8 @@ html,body{
 
 .mainContainer {
   background-color: rebeccapurple;
-  max-width: 40rem ;
+  width: 100%;
+  max-width: 50rem ;
   margin: 0 auto;
   padding: 2rem 1rem;
   display: flex;
@@ -21,8 +22,16 @@ html,body{
   gap: 1rem;
 }
 
+.mainContainer header {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(20, 20, 20);
+  padding: 1rem;
+}
+
 .mainContainer h1 {
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .inputContainer{
