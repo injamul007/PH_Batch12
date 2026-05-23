@@ -60,12 +60,13 @@ html,body{
 }
 
 .todoContainer .todo {
-  background-color: olivedrab;
+  background-color: #16918c;
   display: flex;
   align-items: center;
   gap: 0.3rem;
   border-radius: 0.5rem;
-  padding-left: 10px;
+  padding-inline: 10px;
+  padding-block: 4px;
 }
 
 .todoContainer .todo p {
@@ -75,4 +76,11 @@ html,body{
 .todoContainer .todo button {
   padding: 10px;
   border-radius: 0.5rem;
+}
+
+.editInput {
+  padding: 0.5rem;
+  background-color: #16918c;
+  border: 0;
+  width: 100%;
 }
