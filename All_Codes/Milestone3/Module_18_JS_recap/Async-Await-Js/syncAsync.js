@@ -1,3 +1,6 @@
 // console.log('1st task')
 // console.log('2nd task')
-// console.log('3rd task')
+// setTimeout(()=>{console.log('3rd task')},2000)
+// console.log('4th task')
+// setTimeout(()=>{console.log('5th task')},5000)
+// console.log('6th task')
