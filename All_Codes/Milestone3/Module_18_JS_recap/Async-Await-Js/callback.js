@@ -6,14 +6,11 @@
 //   callback(name)
 // }
 
-
 // function printName(name) {
 //   console.log('hello', name)
 // }
 
-
 // hod('mkl', printName)
-
 
 // function calculate(a,b, callback){
 //   callback(a,b)
@@ -32,3 +29,41 @@
 // calculate(5,5, sum)
 // calculate(5,3, subtract)
 // calculate(5,5, multiply)
+
+//? This is called callback hell
+
+// function getData(data, callback){
+//   setTimeout(()=>{
+//     console.log(data);
+//     if(callback){
+//       callback()
+//     }
+//   },2000)
+// }
+
+// console.log('fetching 1st data');
+// getData('1st data', ()=>{
+//   console.log('fetching 2nd data')
+//   getData('2nd data',()=>{
+//     console.log('fetching 3rd data')
+//     getData('3rd data',()=>{
+//       console.log('fetching 4th data')
+//       getData("4th data")
+//     })
+//   })
+// });
+
+
+//? another example of callback hell
+// setTimeout(() => {
+//   console.log("1st data");
+//   setTimeout(() => {
+//     console.log("2nd data");
+//     setTimeout(() => {
+//       console.log("3rd data");
+//       setTimeout(() => {
+//         console.log("4th data");
+//       }, 1000);
+//     }, 1000);
+//   }, 1000);
+// }, 1000);
