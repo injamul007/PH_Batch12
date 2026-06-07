@@ -2,11 +2,12 @@ const listContainer = document.querySelector(".listContainer");
 const inputTaskField = document.querySelector('#taskAddInput')
 const form = document.querySelector("form");
 
-let todoListArr = [];
+
+let todoListArr = JSON.parse(localStorage.getItem("todos")) || [];
 
 function todoRenderList(arr) {
   listContainer.innerHTML = ''
-  arr.map((item) => {
+  arr.forEach((item) => {
     const divElem = document.createElement("div");
     divElem.classList.add("listItem");
     divElem.innerHTML = `<p>${item.task}</p>`;
@@ -37,8 +38,10 @@ const handleSubmitTask = (e)=> {
     task: taskInputValue
   }
   todoListArr.push(taskAddObj)
+  localStorage.setItem('todos', JSON.stringify(todoListArr))
   todoRenderList(todoListArr)
 }
+
 
 function handleTaskDelete(id) {
   const filteredDelete = todoListArr.filter(item => item.id !== id)
