@@ -49,5 +49,4 @@ function handleTaskDelete(id) {
   todoRenderList(todoListArr)
 }
 
-// form.addEventListener('submit', handleSubmitTask)
 form.addEventListener('submit', handleSubmitTask)
