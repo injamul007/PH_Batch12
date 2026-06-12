@@ -3,5 +3,9 @@
 // console.log(lastFourDigit.padStart(8,'*'))
 // console.log(lastFourDigit.padEnd(8,'*'))
 
-const firstName = 'boss'
+// const firstName = "kala-bilai";
+
+// console.log(firstName.padStart(firstName.length+1, "@"));
+// console.log(firstName.padEnd(firstName.length+1, "@"));
+
 
