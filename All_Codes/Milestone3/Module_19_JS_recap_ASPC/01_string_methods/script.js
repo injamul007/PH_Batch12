@@ -9,3 +9,8 @@
 // console.log(firstName.padEnd(firstName.length+1, "@"));
 
 
+// const fullName = 'injamul hoque tonmoy'
+
+// console.log(fullName.trim().replaceAll(" ","").padStart(fullName.length-1,"@"))
+
+
