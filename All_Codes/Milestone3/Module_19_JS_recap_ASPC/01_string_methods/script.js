@@ -8,9 +8,10 @@
 // console.log(firstName.padStart(firstName.length+1, "@"));
 // console.log(firstName.padEnd(firstName.length+1, "@"));
 
-
-// const fullName = 'injamul hoque tonmoy'
+const fullName = 'injamul hoque tonmoy'
 
 // console.log(fullName.trim().replaceAll(" ","").padStart(fullName.length-1,"@"))
 
+// const str = "hello ! how are you?";
 
+// console.log(str.split(''));
