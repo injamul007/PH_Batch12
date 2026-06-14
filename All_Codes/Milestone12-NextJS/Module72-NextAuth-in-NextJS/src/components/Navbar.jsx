@@ -5,9 +5,9 @@ const Navbar = () => {
   return (
     <div className='border-b-2 py-3 text-center space-x-6'>
       <Link href={'/'}>Home</Link>
-      <Link href={'/about'}>About</Link>
       <Link href={'/public'}>Public</Link>
       <Link href={'/private'}>Private</Link>
+      <Link href={'/admin'}>Admin</Link>
     </div>
   );
 };
