@@ -1,6 +1,6 @@
 // const myName = 'boss'
 
-const clrArr = ['black','blue','red','green','yellow']
+// const clrArr = ['black','blue','red','green','yellow']
 
 // clrArr[clrArr.length-1] = 'lightGreen'
 // clrArr.push('lightBlue')
@@ -11,5 +11,5 @@ const clrArr = ['black','blue','red','green','yellow']
 
 // clrArr.firstName = 'bigBoss'
 
-console.log(clrArr);
+// console.log(clrArr);
 // console.log(clrArr[5][1]);
