@@ -38,3 +38,26 @@
 // testMe();
 
 // console.log('Exiting global execution context');
+
+
+// const message = 'i can do it'
+
+// function sum(a,b){
+//   const result = a + b
+//   return result;
+// }
+
+// function mul(a,b) {
+//   const result = a * b
+//   return result;
+// }
+
+// function cal(a,b) {
+//   return sum(a,b) + mul(a,b)
+// }
+
+// function getResult(a,b){
+//   return cal(a,b)
+// }
+
+// getResult(5,7)
