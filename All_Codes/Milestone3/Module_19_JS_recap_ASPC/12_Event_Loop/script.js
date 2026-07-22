@@ -61,3 +61,5 @@
 // }
 
 // getResult(5,7)
+
+//? global execution context , hoisting , and scope 
