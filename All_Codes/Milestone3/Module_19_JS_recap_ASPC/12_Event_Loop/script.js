@@ -62,4 +62,4 @@
 
 // getResult(5,7)
 
-//? global execution context , hoisting , and scope 
+//? global execution context , hoisting , and scope are just being learnt
