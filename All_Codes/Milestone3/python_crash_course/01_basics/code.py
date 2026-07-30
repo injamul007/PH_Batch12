@@ -16,3 +16,28 @@
 # print(float(naw_age))
 
 
+#? Type Conversion & Type Casting
+
+# print(1 + 2.5)
+# print(1 + int(2.999))
+# print(1 + float(2.999))
+
+
+#? Sum Program => a, b => sum
+
+# a = int(input("Enter a: "))
+# b = int(input("Enter b: "))
+
+# sum = a + b
+
+# print("Sum: ", sum)
+
+
+
+# String Operations
+# Python Strings are immutable in by nature
+name = 'Tony Stark'
+# print(name.upper())
+# print(name.lower())
+# print(name.find('r')) #? it will return index => position
+# print(name.replace('Tony Stark', 'iron-man'))
