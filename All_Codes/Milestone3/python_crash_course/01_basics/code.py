@@ -41,3 +41,7 @@ name = 'Tony Stark'
 # print(name.lower())
 # print(name.find('r')) #? it will return index => position
 # print(name.replace('Tony Stark', 'iron-man'))
+
+
+# check for presence
+# print('m' in 'name')
