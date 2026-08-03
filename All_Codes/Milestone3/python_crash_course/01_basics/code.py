@@ -49,3 +49,17 @@ name = 'Tony Stark'
 #? reserved words
 #? True, in, False, while, for, break, continue
 
+
+#? practice exercise 2
+
+# mango = int(input("Enter Mango price :"))
+# lichi = int(input("Enter Lichi price :"))
+# banana = int(input("Enter Banana price :"))
+
+# sum = mango + lichi + banana
+
+# averagePrice = mango + lichi + banana / 3
+
+# print('the Average of prices is : ', averagePrice)
+
+# print('sum of all the prices are : ', sum)
