@@ -43,5 +43,9 @@ name = 'Tony Stark'
 # print(name.replace('Tony Stark', 'iron-man'))
 
 
-# check for presence
+#? check for presence
 # print('m' in 'name')
+
+#? reserved words
+#? True, in, False, while, for, break, continue
+
