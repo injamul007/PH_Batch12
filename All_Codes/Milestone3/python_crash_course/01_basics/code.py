@@ -63,3 +63,10 @@ name = 'Tony Stark'
 # print('the Average of prices is : ', averagePrice)
 
 # print('sum of all the prices are : ', sum)
+
+
+# superHero = input('Enter the superhero name you like : ')
+
+# print('S' in superHero)
+
+
