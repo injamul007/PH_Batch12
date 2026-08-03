@@ -70,3 +70,15 @@ name = 'Tony Stark'
 # print('S' in superHero)
 
 
+#? arithmetic operator
+# print(5 + 4)
+# print(5 - 4)
+# print(5 * 4)
+# print(5 / 4)
+# print(5 // 4)
+# print(5 % 4) #? modulo -> remainder
+
+# assignment operator
+# comparison operator
+# logical operator
+# conditionals (if-else)
