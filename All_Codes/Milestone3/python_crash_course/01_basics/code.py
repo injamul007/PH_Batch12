@@ -80,5 +80,7 @@ name = 'Tony Stark'
 
 # assignment operator
 # comparison operator
+# print(2 == 2)
 # logical operator
+# print((3 < 5) and (13 > 12))
 # conditionals (if-else)
