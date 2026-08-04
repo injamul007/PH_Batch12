@@ -84,3 +84,41 @@ name = 'Tony Stark'
 # logical operator
 # print((3 < 5) and (13 > 12))
 # conditionals (if-else)
+
+# age = 3
+# if(age > 18):
+#   print('you are an adult')
+
+# elif((age < 18) and (age >= 13)):
+#   print('you are not an adult')
+
+# else:
+#   print('you are just a kid')
+
+# print('end of code')
+
+
+#? Practice Exercise
+#? Mini-Project: Calculator
+
+# num1 = int(input("Enter num1 : "))
+# num2 = int(input("Enter num2 : "))
+# operator = input("Enter the Operator: ")
+
+# if(operator == "+"):
+#   print('This is the result you are looking for: ', num1 + num2)
+
+# elif(operator == "-"):
+#   print('This is the result you are looking for: ', num1 - num2)
+
+# elif(operator == "*"):
+#   print('This is the result you are looking for: ', num1 * num2)
+
+# elif(operator == "/"):
+#   print('This is the result you are looking for: ', num1 / num2)
+
+# elif(operator == "%"):
+#   print('This is the result you are looking for: ', num1 % num2)
+
+# else:
+#   print('INVALID OPERATION')
