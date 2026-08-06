@@ -122,3 +122,15 @@ name = 'Tony Stark'
 
 # else:
 #   print('INVALID OPERATION')
+
+
+#? Part 4 - Range....
+
+#? Loops => repetitive task
+
+#? while loop
+
+# counter = 5
+# while counter > 0:
+#   print(counter * "*")
+#   counter -= 1
