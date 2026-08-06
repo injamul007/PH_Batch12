@@ -134,3 +134,8 @@ name = 'Tony Stark'
 # while counter > 0:
 #   print(counter * "*")
 #   counter -= 1
+
+
+#? For Loops
+# for i in range(1,11):
+#   print(i)
