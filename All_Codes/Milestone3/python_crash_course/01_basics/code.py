@@ -231,3 +231,20 @@ name = 'Tony Stark'
 
 # print(newRolls)
 
+# given a employee records in the form of a list of tuples where each tuples contains:
+
+# (Employee ID, Employee Name, Employee Salary)
+
+employeeRecords = [
+  (101,"Alice",50000),
+  (102,"Bob",65000),
+  (103,"Charlie",45000)
+  ]
+
+searchId = int(input("Enter Employee ID : "))
+
+for ind in employeeRecords:
+  print(ind)
+
+
+# print(len(employeeRecords))
