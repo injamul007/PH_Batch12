@@ -63,3 +63,14 @@
 // getResult(5,7)
 
 //? global execution context , hoisting , and scope are just being learnt
+
+
+// const employeeRecords = [
+//   {id: 101, name:'bob',salary: 50000},
+//   {id: 102, name:'alice',salary: 40000},
+//   {id: 103, name:'charlie',salary: 30000}
+// ]
+
+// for(const ind of employeeRecords) {
+//   console.log();
+// }
