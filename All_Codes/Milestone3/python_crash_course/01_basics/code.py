@@ -235,16 +235,16 @@ name = 'Tony Stark'
 
 # (Employee ID, Employee Name, Employee Salary)
 
-employeeRecords = [
-  (101,"Alice",50000),
-  (102,"Bob",65000),
-  (103,"Charlie",45000)
-  ]
+# employeeRecords = [
+#   (101,"Alice",50000),
+#   (102,"Bob",65000),
+#   (103,"Charlie",45000)
+#   ]
 
-searchId = int(input("Enter Employee ID : "))
+# searchId = int(input("Enter Employee ID : "))
 
-for ind in employeeRecords:
-  print(ind)
+# for ind in employeeRecords:
+#   print(ind)
 
 
 # print(len(employeeRecords))
