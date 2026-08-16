@@ -1,9 +1,9 @@
 //?
 
-const salary = 25000;
-const isBCS = true;
-const height = 68;
-const hasCar = false;
+// const salary = 25000;
+// const isBCS = true;
+// const height = 68;
+// const hasCar = false;
 
 
 // if (salary > 20000 && height > 66) {
@@ -41,6 +41,11 @@ const hasCar = false;
 // } else {
 //   console.log("vag muri khaa")
 // }
+
+const salary = 25000;
+const isBCS = true;
+const height = 68;
+const hasCar = false;
 
 
 if ((salary > 24000 && hasCar == true) || isBCS == true) {
