@@ -25,7 +25,7 @@ if (13 < 10) {
   // console.log("i have not a smaller value")
 }
 
-var kacchi = 600;
+const kacchi = 600;
 
 if (kacchi < 500) {
   // console.log("mama give me some kacchi")
@@ -34,7 +34,7 @@ if (kacchi < 500) {
 }
 
 
-var weight = 20;
+const weight = 20;
 
 if (weight <= 20) {
   console.log("i will carry it by myself")
