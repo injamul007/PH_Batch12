@@ -1,14 +1,14 @@
 //? Logical not operator
 
-const isPassed = false;
+// const isPassed = false;
 
 
 //? if (isPassed === false) //? same as (!isPassed)
-if (!isPassed) {
-  // console.log("Tore biya diya dimu")
-} else {
-  // console.log("tui amar noyoner moni")
-}
+// if (!isPassed) {
+//   // console.log("Tore biya diya dimu")
+// } else {
+//   // console.log("tui amar noyoner moni")
+// }
 
 
 // if (isLeader) {
@@ -46,4 +46,13 @@ if (!isPassed) {
 //   console.log("User input is empty");
 // } else {
 //   console.log("User input is:", userInput);
+// }
+
+
+const isPassed = true
+
+// if(!isPassed) {
+//   console.log('congratulations on your victory !!!');
+// } else {
+//   console.log('shame on yourself for your bad result');
 // }
