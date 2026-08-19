@@ -7,11 +7,11 @@
 //   }
 // }
 
-let n = 54;
-while (n >= 24) {
-  console.log(n)
-  if (n <= 50) {
-    break;
-  }
-  n--;
-}
+// let n = 54;
+// while (n >= 24) {
+//   console.log(n)
+//   if (n <= 50) {
+//     break;
+//   }
+//   n--;
+// }
