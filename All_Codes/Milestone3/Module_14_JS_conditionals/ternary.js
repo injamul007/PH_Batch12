@@ -25,14 +25,14 @@
 // (age >= 18) ? console.log("Vote dio") : console.log("ghumay thako");
 
 
-let price = 1200;
+let price = 100;
 const isLeader = true;
 
-if (isLeader === true) {
-  // price = 0;
-} else {
-  // price += 100;
-}
+// if (isLeader === true) {
+//   // price = 0;
+// } else {
+//   // price += 100;
+// }
 // console.log(price)
 
 // price = (isLeader === true) ? 0 : price += 100;
@@ -54,6 +54,15 @@ if (isLeader === true) {
 //   price += 100;
 // }
 
-price = isLeader === true ? (price > 1000) ? price = price / 2 : price = 0 : price += 100;
+// price = isLeader === true ? (price > 1000) ? price = price / 2 : price = 0 : price += 100;
 
-console.log(price);
+// console.log(price);
+
+// const age = 24
+
+// age > 18 ? console.log('you can vote now') : console.log('you are still a kid');
+
+
+price = isLeader === true ? (price> 1000) ? price = price / 2 : price = 0 : price+=100
+
+// console.log(price);
