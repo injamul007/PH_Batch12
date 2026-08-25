@@ -9,6 +9,13 @@
 //   console.log(i);
 // }
 
+// for(let i = 1; i<=200; i++) {
+//   if(i === 100) {
+//     break;
+//   }
+//   console.log(i);
+// }
+
 
 //? 2. sum upto 100
 
@@ -24,12 +31,30 @@
 //   console.log(sum);
 // }
 
+// let sum = 0;
+
+// for(let i = 0; i <= 50; i++) {
+//   sum+=i
+//   if(sum > 100) {
+//     break;
+//   }
+// }
+
+// console.log(sum);
+
 
 //? square number break
 
 // for (var i = 1; i <= 50; i++) {
 //   if (i*i === 16) {
 //     break;
+//   }
+//   console.log(i);
+// }
+
+// for(let i = 1; i <= 50; i++){
+//   if(i*i === 16) {
+//     break
 //   }
 //   console.log(i);
 // }
